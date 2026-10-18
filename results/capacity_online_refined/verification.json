@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "observable_controller_checks": 1890,
+  "target_labels_not_controller_inputs": true,
+  "smoke": false,
+  "count_replay": {
+    "replays": 204800,
+    "pooled_success_error": -9.79803493788961e-05,
+    "pooled_standard_error": 0.0004572290964511667,
+    "quota_never_exceeded": true
+  },
+  "service_configurations": 2,
+  "service_scenarios": 6,
+  "service_replicates": 4096,
+  "seconds": 208.59399700164795,
+  "physical_detection_integrated": true,
+  "count_theorem_does_not_claim_deadline_dominance": true,
+  "provisional_slot_reservations_prevent_parallel_overshoot": true,
+  "simultaneous_confidence_covers_simulation_only": true,
+  "fixed_rule_miss_evaluated_exactly": true,
+  "stopped_miss_one_sided_simultaneous_hoeffding_profiles": 1100,
+  "risk_bounds_cover_simulation_only": true
+}

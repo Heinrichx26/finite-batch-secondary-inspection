@@ -1,0 +1,5 @@
+claim,threshold,direction,radius
+218-review superiority remains possible at C=930,0.0,above,0.0010760340561493673
+full-review success can fall below 80% at C=949,0.8,below,0.04302006849439938
+218-review mean miss risk can exceed 0.1%,0.001,above,
+full-review mean miss risk can exceed 0.1%,0.001,above,

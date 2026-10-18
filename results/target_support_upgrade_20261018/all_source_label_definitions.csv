@@ -1,0 +1,32 @@
+endpoint,targets,eligible_targets,eligible_target_images,target_complete_profiles
+gun,180,0,0,100
+knife,150,2,1,100
+pliers,180,0,0,100
+scissors,110,4,1,100
+wrench,240,3,1,100
+gun + knife,290,2,1,100
+gun + pliers,340,0,0,100
+gun + scissors,290,4,1,100
+gun + wrench,380,3,1,100
+knife + pliers,330,2,1,100
+knife + scissors,260,6,2,100
+knife + wrench,350,5,2,100
+pliers + scissors,290,4,1,100
+pliers + wrench,340,3,1,100
+scissors + wrench,350,7,2,100
+gun + knife + pliers,450,2,1,100
+gun + knife + scissors,400,6,2,100
+gun + knife + wrench,470,5,2,100
+gun + pliers + scissors,450,4,1,100
+gun + pliers + wrench,480,3,1,100
+gun + scissors + wrench,490,7,2,100
+knife + pliers + scissors,440,6,2,100
+knife + pliers + wrench,450,5,2,100
+knife + scissors + wrench,460,9,3,100
+pliers + scissors + wrench,450,7,2,100
+gun + knife + pliers + scissors,560,6,2,100
+gun + knife + pliers + wrench,570,5,2,100
+gun + knife + scissors + wrench,580,9,3,100
+gun + pliers + scissors + wrench,590,7,2,100
+knife + pliers + scissors + wrench,560,9,3,100
+gun + knife + pliers + scissors + wrench,680,9,3,100

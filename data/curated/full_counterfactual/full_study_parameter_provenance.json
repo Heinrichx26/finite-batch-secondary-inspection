@@ -1,0 +1,304 @@
+{
+  "study_date": "2026-10-14",
+  "behavior_source_doi": "10.6084/m9.figshare.30316936.v2",
+  "behavior_license": "CC BY 4.0",
+  "raw_source_sha256": {
+    "behavior_NRA_group.csv": "6f065c46f5c7e67973895e1931693dde3018db895a645a3b77516f8b73133d36",
+    "behavior_RA_group.csv": "b4e9a8b4189ba6eb854e5b674e6801ff40b4c6fbdebd2b3b47b1aea99e6323b3",
+    "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+    "task_selected_for_study.csv": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+    "pilotResult_combinedAIandNoAI.xlsx": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f"
+  },
+  "flow_source": {
+    "smoke": false,
+    "source": "https://www.tsa.gov/sites/default/files/foia-readingroom/tsa-throughput-data-to-september-27-2026-to-october-3-2026.pdf",
+    "PDF_pages": 1379,
+    "parsed_pages": 1379,
+    "rows": 54060,
+    "airports": 425,
+    "dates": [
+      "2026-09-27",
+      "2026-09-28",
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-03"
+    ],
+    "unique_checkpoint_hour_keys": true,
+    "independent_table_comparisons": 6,
+    "every_page_numeric_column_conserved": true,
+    "sha256": "3ff2c8422501e745f6a0af75a7630059318ced347898c81320670bfedb60ab53",
+    "persons_including_KCM_total": 16633989,
+    "counting_unit": "Source Total Pax + KCM PAX; includes known crewmembers.",
+    "time_zone": "Not specified in the saved table. Preserve source clock.",
+    "no_missing_combinations_imputed": true,
+    "legal_basis": "Official US federal agency data; no third-party notice identified in the report.",
+    "SFO": {
+      "rows": 1185,
+      "days": 7,
+      "checkpoints": 8,
+      "reported_persons_including_KCM": 532978,
+      "largest_reported_hour": 6190,
+      "largest_hour_key": [
+        "2026-09-27",
+        "10:00"
+      ],
+      "employee_checkpoint_rows": 283
+    },
+    "DEN": {
+      "rows": 277,
+      "days": 7,
+      "checkpoints": 2,
+      "reported_persons_including_KCM": 477752,
+      "largest_reported_hour": 7224,
+      "largest_hour_key": [
+        "2026-09-28",
+        "09:00"
+      ],
+      "employee_checkpoint_rows": 0
+    },
+    "EWR": {
+      "rows": 768,
+      "days": 7,
+      "checkpoints": 5,
+      "reported_persons_including_KCM": 441147,
+      "largest_reported_hour": 5449,
+      "largest_hour_key": [
+        "2026-10-01",
+        "14:00"
+      ],
+      "employee_checkpoint_rows": 0
+    }
+  },
+  "primary_endpoint": "At least one annotated gun or knife.",
+  "negative_task_mixture": "Source images with empty annotation.",
+  "source_inputs": [
+    "Image annotation",
+    "Assigned machine output",
+    "Final human output",
+    "Truth request",
+    "Total online task seconds",
+    "Participant and image identity"
+  ],
+  "original_route": {
+    "B": "Truth request or nonempty final human response.",
+    "K": "Machine alarm, human clear, no truth request.",
+    "U": "Machine clear, human clear, no truth request."
+  },
+  "backup_response": "Same-image unaided records: request or nonempty response triggers inspection.",
+  "response_profiles": {
+    "marginal_groups": 2,
+    "people_per_group": 10,
+    "combinations": 100,
+    "marginals": "Uniform",
+    "unknown_dependence": "Every coupling with fixed group marginals."
+  },
+  "reference": {
+    "base_physical_detection": 0.9999,
+    "backup_physical_detection": 0.99,
+    "positive_secondary_retention": 1.0,
+    "occurrence_probability": 0.001,
+    "target_conditional_miss_upper_bound": 0.001,
+    "tasks_per_reported_person": 1,
+    "continuous_target_coverage": 0.8881818181818166,
+    "finite_minimum_reviews": 217,
+    "paired_example_reviews": 218,
+    "full_reviews": 244
+  },
+  "source_duration": "Recorded total online task time in seconds, including interface actions.",
+  "physical_service": "Lognormal, separately specified from reading duration.",
+  "complete_batch": {
+    "tasks": 1040,
+    "B_tasks": 787,
+    "K_tasks": 9,
+    "U_tasks": 244,
+    "gun_or_knife_positive": 290,
+    "positive_B": 286,
+    "positive_K": 2,
+    "positive_U": 2,
+    "uniformly_selected_without_replacement": true,
+    "all_original_checks_included": true
+  },
+  "theory_grid": {
+    "endpoints": [
+      "gun_knife",
+      "gun",
+      "all_labels"
+    ],
+    "physical_limits": [
+      827,
+      847,
+      867,
+      887,
+      907,
+      947,
+      987
+    ],
+    "permissions": [
+      "retain",
+      "clear"
+    ],
+    "base_detection": [
+      0.999,
+      0.9999,
+      1.0
+    ],
+    "backup_detection": [
+      0.95,
+      0.99,
+      0.999
+    ],
+    "positive_retention": [
+      0.8,
+      0.95,
+      1.0
+    ],
+    "shared_state_correlations": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.1,
+        0.1,
+        0.1
+      ]
+    ],
+    "review_counts": [
+      0,
+      244
+    ],
+    "miss_limits": [
+      0.0001,
+      0.001,
+      0.005,
+      0.01
+    ],
+    "joint_targets": [
+      0.5,
+      0.8,
+      0.9,
+      0.95
+    ]
+  },
+  "deadline_grid": {
+    "primary_positions": 8,
+    "backup_positions": [
+      1,
+      3
+    ],
+    "physical_positions": [
+      24,
+      28,
+      32
+    ],
+    "physical_mean_seconds": [
+      90.0,
+      120.0
+    ],
+    "physical_cv": 1.0,
+    "arrival_duration_seconds": 3600,
+    "arrival_patterns": [
+      "uniform",
+      "burst"
+    ],
+    "deadline_seconds": [
+      3600,
+      4500,
+      5400
+    ],
+    "ordinary_replicates_per_profile": 128,
+    "refined_replicates_per_profile": 16384,
+    "selection": "Widest preliminary paired effect at 75 minutes among 120-second settings.",
+    "confidence": "Exact binomial intervals, union adjustment over 24*3*3*100 cells.",
+    "random_seed": "202610146000 + replicate"
+  },
+  "airport_grid": {
+    "airports": [
+      "SFO",
+      "DEN",
+      "EWR"
+    ],
+    "all_retained_checkpoint_hours": true,
+    "exclude_checkpoint_label": "employee",
+    "capacity_factors": [
+      0.75,
+      1.0,
+      1.25
+    ],
+    "response_settings": [
+      "recorded",
+      "independent_trials",
+      "unpaired_duration"
+    ],
+    "replicates": 64,
+    "physical_mean_seconds": 120.0,
+    "physical_cv": 1.0,
+    "reference_utilization": 0.85,
+    "capacity_rule": "Per-checkpoint ceil(peak hourly count * reference expected service / (3600*.85)); scaled and floored, minimum one.",
+    "capacity_fixed_between_measures": true,
+    "uniform_arrivals": "Uniform over the reported hour.",
+    "burst_arrivals": "80 percent in first 15 minutes, 20 percent in remaining 45 minutes.",
+    "seed": "20261014070 + airport_index*100000 + replicate*1000 + checkpoint_code",
+    "checkpoint_code": "Sum of (character_position+1)*Unicode(character).",
+    "negative_referral_seed": "Main airport seed + 777",
+    "paired_inputs": "Arrivals, source tasks, response profiles, selection, service and capacity.",
+    "hourly_joint_deadline": "Hour end plus 15 minutes.",
+    "individual_pending_deadline": "Own arrival plus 15 minutes."
+  },
+  "stress_grid": {
+    "duration_multipliers": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "physical_mean_seconds": [
+      60.0,
+      120.0,
+      240.0
+    ],
+    "physical_cv": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "positive_secondary_retention": [
+      0.8,
+      1.0
+    ],
+    "occurrence_probability": [
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "arrival_patterns": [
+      "uniform",
+      "burst"
+    ],
+    "replicates": 6
+  },
+  "transfer_grid": {
+    "original_empty_B_weights": [
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "secondary_empty_referral_thinning": [
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "fixed_reference_capacity": true,
+    "replicates": 6
+  },
+  "bootstrap": {
+    "repetitions": 4000,
+    "seed": 202610142,
+    "resampling": "Crossed image and participant multinomial weights within source strata."
+  },
+  "interpretive_scope": "Pre-deployment counterfactual effects conditional on the stated source-response law and operating parameters."
+}

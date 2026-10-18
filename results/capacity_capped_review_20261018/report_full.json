@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "key_rows": 15,
+  "frontier_rows": 1225,
+  "minimum_capacity_rows": 20,
+  "physical_detection_factor": 0.933510774977549,
+  "same_distribution_effect_rows": 51,
+  "zeta_values": [
+    0.0,
+    0.01,
+    0.025,
+    0.05,
+    0.1
+  ],
+  "nmax244_is_optimal_within_capped_family_for_both_outcomes": true
+}

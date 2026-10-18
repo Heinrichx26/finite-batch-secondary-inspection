@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "source_sha256": "4a35c3a4bf456a7b7e7503a8da0e587ce646b26b8c5af3d05857da2346940bc8",
+  "endpoints": [
+    "gun",
+    "gun_knife",
+    "all_labels"
+  ],
+  "capacities": [
+    796,
+    827,
+    887,
+    907,
+    916,
+    930,
+    949,
+    969,
+    1040
+  ],
+  "review_counts": 245,
+  "grid_rows": 6615,
+  "risk_limit": 0.001,
+  "success_levels": [
+    0.8,
+    0.9
+  ],
+  "no_service_simulation_rerun": true,
+  "seconds": 2.468379999991157
+}

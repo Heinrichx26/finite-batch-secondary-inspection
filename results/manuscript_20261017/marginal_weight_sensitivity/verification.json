@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "marginal_weight_sensitivity.py": "6722a72333b0dfb18379368534f202e7d9f016a73bba89acfd231b7e8352c7fc",
+    "full_counterfactual_model.py": "bac364ea92fadaae90a4cfaf19399277735c397e8553bde799998fc69e40d49a"
+  },
+  "profile_support": "10 observed participant profiles in each response group",
+  "empirical_weights": "uniform within each group",
+  "includes_unobserved_profiles": false,
+  "delta_grid": [
+    0.0,
+    0.005,
+    0.01,
+    0.025,
+    0.05,
+    1.0
+  ],
+  "sensitivity_rows": 30,
+  "tipping_points": [
+    {
+      "claim": "218-review superiority remains possible at C=930",
+      "threshold": 0.0,
+      "direction": "above",
+      "radius": 0.0010760340561493673
+    },
+    {
+      "claim": "full-review success can fall below 80% at C=949",
+      "threshold": 0.8,
+      "direction": "below",
+      "radius": 0.04302006849439938
+    },
+    {
+      "claim": "218-review mean miss risk can exceed 0.1%",
+      "threshold": 0.001,
+      "direction": "above",
+      "radius": null
+    },
+    {
+      "claim": "full-review mean miss risk can exceed 0.1%",
+      "threshold": 0.001,
+      "direction": "above",
+      "radius": null
+    }
+  ]
+}

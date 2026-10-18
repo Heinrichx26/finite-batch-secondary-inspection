@@ -1,0 +1,17 @@
+N,target_count,requirement_relative_to_referral_detection_ceiling,minimum_review_count,maximum_omitted_reviews,interpretation
+244,1,0.8,196,48,mathematical coverage calculation; target count varied
+244,1,0.9,220,24,mathematical coverage calculation; target count varied
+244,1,0.95,232,12,mathematical coverage calculation; target count varied
+244,1,0.99,242,2,mathematical coverage calculation; target count varied
+244,2,0.8,219,25,mathematical coverage calculation; target count varied
+244,2,0.9,232,12,mathematical coverage calculation; target count varied
+244,2,0.95,238,6,mathematical coverage calculation; target count varied
+244,2,0.99,243,1,mathematical coverage calculation; target count varied
+244,5,0.8,234,10,mathematical coverage calculation; target count varied
+244,5,0.9,239,5,mathematical coverage calculation; target count varied
+244,5,0.95,242,2,mathematical coverage calculation; target count varied
+244,5,0.99,244,0,mathematical coverage calculation; target count varied
+244,10,0.8,239,5,mathematical coverage calculation; target count varied
+244,10,0.9,242,2,mathematical coverage calculation; target count varied
+244,10,0.95,243,1,mathematical coverage calculation; target count varied
+244,10,0.99,244,0,mathematical coverage calculation; target count varied

@@ -1,0 +1,800 @@
+{
+  "status": "completed",
+  "study_type": "constructed finite-population method comparison; not an empirical airport performance estimate",
+  "model": {
+    "strata": 2,
+    "items_per_stratum": 4,
+    "hidden_worlds": 2,
+    "targets_per_world": 2,
+    "categories": [
+      "target with referral",
+      "target without referral",
+      "non-target with referral",
+      "non-target without referral"
+    ],
+    "online_observations": [
+      "chosen stratum",
+      "binary referral response"
+    ],
+    "online_prohibitions": [
+      "target identity",
+      "physical-search outcome"
+    ],
+    "probability_calculation": "exact rational hypergeometric updates and finite-horizon Bellman recursion"
+  },
+  "common_limits": {
+    "readings": 6,
+    "searches": 2
+  },
+  "resource_sensitivity": [
+    {
+      "readings_limit": 5,
+      "searches_limit": 2,
+      "prior_group_A": 0.5,
+      "adaptive": {
+        "complete_target_success": 0.625,
+        "mean_missed_target_fraction": 0.3229166666666667,
+        "average_readings": 4.25,
+        "average_searches": 1.6666666666666667
+      },
+      "fixed_precommitted_schedule": {
+        "complete_target_success": 0.5,
+        "mean_missed_target_fraction": 0.375,
+        "average_readings": 4.166666666666667,
+        "average_searches": 1.75
+      },
+      "uniform_referral_stop": {
+        "complete_target_success": 0.23809523809523808,
+        "mean_missed_target_fraction": 0.43452380952380953,
+        "average_readings": 4.107142857142857,
+        "average_searches": 1.6964285714285714
+      },
+      "fixed_schedule": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "independent_order_enumeration": true
+    },
+    {
+      "readings_limit": 6,
+      "searches_limit": 3,
+      "prior_group_A": 0.5,
+      "adaptive": {
+        "complete_target_success": 0.7083333333333334,
+        "mean_missed_target_fraction": 0.19791666666666666,
+        "average_readings": 4.645833333333333,
+        "average_searches": 1.8958333333333333
+      },
+      "fixed_precommitted_schedule": {
+        "complete_target_success": 0.5833333333333334,
+        "mean_missed_target_fraction": 0.25,
+        "average_readings": 5.708333333333333,
+        "average_searches": 2.25
+      },
+      "uniform_referral_stop": {
+        "complete_target_success": 0.5357142857142857,
+        "mean_missed_target_fraction": 0.25,
+        "average_readings": 5.732142857142857,
+        "average_searches": 2.25
+      },
+      "fixed_schedule": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "independent_order_enumeration": true
+    },
+    {
+      "readings_limit": 7,
+      "searches_limit": 2,
+      "prior_group_A": 0.5,
+      "adaptive": {
+        "complete_target_success": 0.7083333333333334,
+        "mean_missed_target_fraction": 0.14583333333333334,
+        "average_readings": 4.708333333333333,
+        "average_searches": 2.0
+      },
+      "fixed_precommitted_schedule": {
+        "complete_target_success": 0.5,
+        "mean_missed_target_fraction": 0.25,
+        "average_readings": 4.5,
+        "average_searches": 2.0
+      },
+      "uniform_referral_stop": {
+        "complete_target_success": 0.3333333333333333,
+        "mean_missed_target_fraction": 0.3333333333333333,
+        "average_readings": 4.5,
+        "average_searches": 2.0
+      },
+      "fixed_schedule": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "independent_order_enumeration": true
+    }
+  ],
+  "prior_sensitivity": {
+    "training_priors": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "actual_priors": [
+      0.1,
+      0.3,
+      0.5,
+      0.7,
+      0.9
+    ],
+    "matched_prior_comparisons": [
+      {
+        "trained_prior_group_A": 0.1,
+        "actual_prior_group_A": 0.1,
+        "adaptive": {
+          "complete_target_success": 0.9125,
+          "mean_missed_target_fraction": 0.05,
+          "average_readings": 3.558333333333333,
+          "average_searches": 1.975
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.9,
+          "mean_missed_target_fraction": 0.058333333333333334,
+          "average_readings": 3.55,
+          "average_searches": 1.9833333333333334
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.5,
+        "actual_prior_group_A": 0.5,
+        "adaptive": {
+          "complete_target_success": 0.6875,
+          "mean_missed_target_fraction": 0.20833333333333334,
+          "average_readings": 4.583333333333333,
+          "average_searches": 1.875
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.5,
+          "mean_missed_target_fraction": 0.2916666666666667,
+          "average_readings": 4.416666666666667,
+          "average_searches": 1.9166666666666667
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.9,
+        "actual_prior_group_A": 0.9,
+        "adaptive": {
+          "complete_target_success": 0.9125,
+          "mean_missed_target_fraction": 0.05,
+          "average_readings": 3.558333333333333,
+          "average_searches": 1.975
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.9,
+          "mean_missed_target_fraction": 0.058333333333333334,
+          "average_readings": 3.55,
+          "average_searches": 1.9833333333333334
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      }
+    ],
+    "prior_misspecification_examples": [
+      {
+        "trained_prior_group_A": 0.1,
+        "actual_prior_group_A": 0.9,
+        "adaptive": {
+          "complete_target_success": 0.2125,
+          "mean_missed_target_fraction": 0.45,
+          "average_readings": 5.358333333333333,
+          "average_searches": 1.775
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.1,
+          "mean_missed_target_fraction": 0.525,
+          "average_readings": 5.283333333333333,
+          "average_searches": 1.85
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.5,
+        "actual_prior_group_A": 0.1,
+        "adaptive": {
+          "complete_target_success": 0.5708333333333333,
+          "mean_missed_target_fraction": 0.275,
+          "average_readings": 4.95,
+          "average_searches": 1.8416666666666666
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.1,
+          "mean_missed_target_fraction": 0.525,
+          "average_readings": 5.283333333333333,
+          "average_searches": 1.85
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.5,
+        "actual_prior_group_A": 0.9,
+        "adaptive": {
+          "complete_target_success": 0.8041666666666667,
+          "mean_missed_target_fraction": 0.14166666666666666,
+          "average_readings": 4.216666666666667,
+          "average_searches": 1.9083333333333334
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.9,
+          "mean_missed_target_fraction": 0.058333333333333334,
+          "average_readings": 3.55,
+          "average_searches": 1.9833333333333334
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      }
+    ],
+    "cells": [
+      {
+        "trained_prior_group_A": 0.1,
+        "actual_prior_group_A": 0.1,
+        "adaptive": {
+          "complete_target_success": 0.9125,
+          "mean_missed_target_fraction": 0.05,
+          "average_readings": 3.558333333333333,
+          "average_searches": 1.975
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.9,
+          "mean_missed_target_fraction": 0.058333333333333334,
+          "average_readings": 3.55,
+          "average_searches": 1.9833333333333334
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.1,
+        "actual_prior_group_A": 0.3,
+        "adaptive": {
+          "complete_target_success": 0.7375,
+          "mean_missed_target_fraction": 0.15,
+          "average_readings": 4.008333333333334,
+          "average_searches": 1.925
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.7,
+          "mean_missed_target_fraction": 0.175,
+          "average_readings": 3.9833333333333334,
+          "average_searches": 1.95
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.1,
+        "actual_prior_group_A": 0.5,
+        "adaptive": {
+          "complete_target_success": 0.5625,
+          "mean_missed_target_fraction": 0.25,
+          "average_readings": 4.458333333333333,
+          "average_searches": 1.875
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.5,
+          "mean_missed_target_fraction": 0.2916666666666667,
+          "average_readings": 4.416666666666667,
+          "average_searches": 1.9166666666666667
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.1,
+        "actual_prior_group_A": 0.7,
+        "adaptive": {
+          "complete_target_success": 0.3875,
+          "mean_missed_target_fraction": 0.35,
+          "average_readings": 4.908333333333333,
+          "average_searches": 1.825
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.3,
+          "mean_missed_target_fraction": 0.4083333333333333,
+          "average_readings": 4.85,
+          "average_searches": 1.8833333333333333
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.1,
+        "actual_prior_group_A": 0.9,
+        "adaptive": {
+          "complete_target_success": 0.2125,
+          "mean_missed_target_fraction": 0.45,
+          "average_readings": 5.358333333333333,
+          "average_searches": 1.775
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.1,
+          "mean_missed_target_fraction": 0.525,
+          "average_readings": 5.283333333333333,
+          "average_searches": 1.85
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.5,
+        "actual_prior_group_A": 0.1,
+        "adaptive": {
+          "complete_target_success": 0.5708333333333333,
+          "mean_missed_target_fraction": 0.275,
+          "average_readings": 4.95,
+          "average_searches": 1.8416666666666666
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.1,
+          "mean_missed_target_fraction": 0.525,
+          "average_readings": 5.283333333333333,
+          "average_searches": 1.85
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.5,
+        "actual_prior_group_A": 0.3,
+        "adaptive": {
+          "complete_target_success": 0.6291666666666667,
+          "mean_missed_target_fraction": 0.24166666666666667,
+          "average_readings": 4.766666666666667,
+          "average_searches": 1.8583333333333334
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.3,
+          "mean_missed_target_fraction": 0.4083333333333333,
+          "average_readings": 4.85,
+          "average_searches": 1.8833333333333333
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.5,
+        "actual_prior_group_A": 0.5,
+        "adaptive": {
+          "complete_target_success": 0.6875,
+          "mean_missed_target_fraction": 0.20833333333333334,
+          "average_readings": 4.583333333333333,
+          "average_searches": 1.875
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.5,
+          "mean_missed_target_fraction": 0.2916666666666667,
+          "average_readings": 4.416666666666667,
+          "average_searches": 1.9166666666666667
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.5,
+        "actual_prior_group_A": 0.7,
+        "adaptive": {
+          "complete_target_success": 0.7458333333333333,
+          "mean_missed_target_fraction": 0.175,
+          "average_readings": 4.4,
+          "average_searches": 1.8916666666666666
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.7,
+          "mean_missed_target_fraction": 0.175,
+          "average_readings": 3.9833333333333334,
+          "average_searches": 1.95
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.5,
+        "actual_prior_group_A": 0.9,
+        "adaptive": {
+          "complete_target_success": 0.8041666666666667,
+          "mean_missed_target_fraction": 0.14166666666666666,
+          "average_readings": 4.216666666666667,
+          "average_searches": 1.9083333333333334
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.9,
+          "mean_missed_target_fraction": 0.058333333333333334,
+          "average_readings": 3.55,
+          "average_searches": 1.9833333333333334
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.9,
+        "actual_prior_group_A": 0.1,
+        "adaptive": {
+          "complete_target_success": 0.2125,
+          "mean_missed_target_fraction": 0.45,
+          "average_readings": 5.358333333333333,
+          "average_searches": 1.775
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.1,
+          "mean_missed_target_fraction": 0.525,
+          "average_readings": 5.283333333333333,
+          "average_searches": 1.85
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.9,
+        "actual_prior_group_A": 0.3,
+        "adaptive": {
+          "complete_target_success": 0.3875,
+          "mean_missed_target_fraction": 0.35,
+          "average_readings": 4.908333333333333,
+          "average_searches": 1.825
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.3,
+          "mean_missed_target_fraction": 0.4083333333333333,
+          "average_readings": 4.85,
+          "average_searches": 1.8833333333333333
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.9,
+        "actual_prior_group_A": 0.5,
+        "adaptive": {
+          "complete_target_success": 0.5625,
+          "mean_missed_target_fraction": 0.25,
+          "average_readings": 4.458333333333333,
+          "average_searches": 1.875
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.5,
+          "mean_missed_target_fraction": 0.2916666666666667,
+          "average_readings": 4.416666666666667,
+          "average_searches": 1.9166666666666667
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.9,
+        "actual_prior_group_A": 0.7,
+        "adaptive": {
+          "complete_target_success": 0.7375,
+          "mean_missed_target_fraction": 0.15,
+          "average_readings": 4.008333333333334,
+          "average_searches": 1.925
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.7,
+          "mean_missed_target_fraction": 0.175,
+          "average_readings": 3.9833333333333334,
+          "average_searches": 1.95
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      },
+      {
+        "trained_prior_group_A": 0.9,
+        "actual_prior_group_A": 0.9,
+        "adaptive": {
+          "complete_target_success": 0.9125,
+          "mean_missed_target_fraction": 0.05,
+          "average_readings": 3.558333333333333,
+          "average_searches": 1.975
+        },
+        "fixed_precommitted_schedule": {
+          "complete_target_success": 0.9,
+          "mean_missed_target_fraction": 0.058333333333333334,
+          "average_readings": 3.55,
+          "average_searches": 1.9833333333333334
+        },
+        "uniform_referral_stop": {
+          "complete_target_success": 0.2976190476190476,
+          "mean_missed_target_fraction": 0.36904761904761907,
+          "average_readings": 4.392857142857143,
+          "average_searches": 1.8928571428571428
+        },
+        "fixed_schedule": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "adaptive_bellman_states": 80
+      }
+    ]
+  },
+  "independent_order_enumeration": true,
+  "interpretation": "The example quantifies the value and prior sensitivity of adapting the next stratum to observed referral responses under matched resource limits. It does not estimate airport performance or replace the manuscript's fixed-count analysis."
+}

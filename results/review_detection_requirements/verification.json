@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "fingerprints": {
+    "scripts": {
+      "review_detection_requirements.py": "3da8ddd1f9149627a4d6c9ee9372f1cec147301f9b12e32841b4e14224c8da82",
+      "full_counterfactual_model.py": "bac364ea92fadaae90a4cfaf19399277735c397e8553bde799998fc69e40d49a",
+      "marginal_weight_sensitivity.py": "6722a72333b0dfb18379368534f202e7d9f016a73bba89acfd231b7e8352c7fc"
+    },
+    "data": {
+      "behavior_NRA_group.csv": "6f065c46f5c7e67973895e1931693dde3018db895a645a3b77516f8b73133d36",
+      "behavior_RA_group.csv": "b4e9a8b4189ba6eb854e5b674e6801ff40b4c6fbdebd2b3b47b1aea99e6323b3",
+      "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+      "task_selected_for_study.csv": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+      "pilotResult_combinedAIandNoAI.xlsx": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f"
+    }
+  },
+  "reference_d0": 0.9999,
+  "reference_d1": 0.99,
+  "reference_joint_detection_probability": 0.933510774977549,
+  "C907_global_maximum_S_lower": 0.5371947455086346,
+  "C907_global_optimal_reviews": [
+    218
+  ],
+  "no_detection_risk_constraint_applied": true,
+  "normalized_policy_comparisons": [
+    {
+      "capacity": 907,
+      "quantity": "S_218",
+      "lower": 0.5371947455086346,
+      "independent": 0.686653224212241,
+      "upper": 0.7978479390136951,
+      "reference_scaled_lower": 0.5014770831936326,
+      "reference_scaled_upper": 0.7447996478629147
+    },
+    {
+      "capacity": 907,
+      "quantity": "S_244",
+      "lower": 0.5,
+      "independent": 0.76,
+      "upper": 1.0,
+      "reference_scaled_lower": 0.4667553874887745,
+      "reference_scaled_upper": 0.933510774977549
+    },
+    {
+      "capacity": 907,
+      "quantity": "S_218_minus_S_244",
+      "lower": -0.20215206098630487,
+      "independent": -0.07334677578775897,
+      "upper": 0.2816400099040616,
+      "reference_scaled_lower": -0.1887111271146342,
+      "reference_scaled_upper": 0.2629139839102251
+    },
+    {
+      "capacity": 930,
+      "quantity": "S_218",
+      "lower": 0.6581395397181768,
+      "independent": 0.7685788368087003,
+      "upper": 0.7978479390136951,
+      "reference_scaled_lower": 0.6143803517656826,
+      "reference_scaled_upper": 0.7447996478629147
+    },
+    {
+      "capacity": 930,
+      "quantity": "S_244",
+      "lower": 0.8,
+      "independent": 0.9,
+      "upper": 1.0,
+      "reference_scaled_lower": 0.7468086199820392,
+      "reference_scaled_upper": 0.933510774977549
+    },
+    {
+      "capacity": 930,
+      "quantity": "S_218_minus_S_244",
+      "lower": -0.20215206098630487,
+      "independent": -0.1314211631912995,
+      "upper": -0.002152061793414295,
+      "reference_scaled_lower": -0.1887111271146342,
+      "reference_scaled_upper": -0.0020089728725697525
+    }
+  ],
+  "review_count_rows": 245,
+  "requirement_rows": 32,
+  "maximum_reference_scaling_error": 3.3306690738754696e-16,
+  "common_physical_detection_factor_required": true,
+  "target_referral_retention_fixed_at_one": true,
+  "service_simulation_run": false
+}

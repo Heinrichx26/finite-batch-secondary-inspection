@@ -1,0 +1,35 @@
+{
+  "outcome": "S: every target is referred and all assigned searches fit capacity",
+  "conversion": "S = J / stored_detection_factor",
+  "stored_detection_factor": 0.933510774977549,
+  "sources": {
+    "yang_copula_sensitivity.csv": {
+      "sha256": "6331e46597fad283cb33e7581710f342295b392582e791e95242865220a8613a",
+      "normalized_output": "yang_copula_referral_workload.csv",
+      "divided_columns": [
+        "lower",
+        "upper",
+        "unrestricted_lower",
+        "independent_effect",
+        "unrestricted_upper",
+        "lower_uncovered",
+        "upper_uncovered"
+      ],
+      "rows": 45
+    },
+    "yang_equal_budget_sampling.csv": {
+      "sha256": "6de8af97e2f486f112d0e65712fbe5e9e74bd92130cdffff7e5eec9e2bebc663",
+      "normalized_output": "yang_referral_workload_sampling.csv",
+      "divided_columns": [
+        "exact_catalogue_bound",
+        "mean_estimate",
+        "bias",
+        "rmse"
+      ],
+      "rows": 60
+    }
+  },
+  "maximum_roundtrip_error": 2.7755575615628914e-17,
+  "all_effect_signs_preserved": true,
+  "new_experiments": 0
+}

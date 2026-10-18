@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "fingerprints": {
+    "script": "fa23811ff40664057b296e09096664841be86dea096c39af6fe3d021944da095",
+    "kernel": "6cc4eb310622d62007afc6f2bea50cc932d14e96ede66816339b1e6711848aa3",
+    "source": {
+      "behavior_NRA_group.csv": "6f065c46f5c7e67973895e1931693dde3018db895a645a3b77516f8b73133d36",
+      "behavior_RA_group.csv": "b4e9a8b4189ba6eb854e5b674e6801ff40b4c6fbdebd2b3b47b1aea99e6323b3",
+      "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+      "task_selected_for_study.csv": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+      "pilotResult_combinedAIandNoAI.xlsx": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f"
+    }
+  },
+  "exact_breakpoint_checks": 4200,
+  "largest_independent_error": 1.1102230246251565e-16,
+  "largest_source_kernel_error": 2.220446049250313e-16,
+  "target_failure_chosen_before_uniform_sample": true
+}

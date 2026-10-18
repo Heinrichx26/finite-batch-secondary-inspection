@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "fingerprints": {
+    "scripts": {
+      "capacity_stopping_marginal_sensitivity.py": "0e859e217a17e0319def209922f2525ff6ce66705ec2c8f7d333fdf7afa6ece6",
+      "capacity_capped_review_study.py": "4aede58762a3c80c5f7ffa4efa14ef920cf624ff7216baf87ca81852395cfb8d",
+      "marginal_weight_sensitivity.py": "6722a72333b0dfb18379368534f202e7d9f016a73bba89acfd231b7e8352c7fc"
+    },
+    "source": {
+      "behavior_NRA_group.csv": "6f065c46f5c7e67973895e1931693dde3018db895a645a3b77516f8b73133d36",
+      "behavior_RA_group.csv": "b4e9a8b4189ba6eb854e5b674e6801ff40b4c6fbdebd2b3b47b1aea99e6323b3",
+      "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+      "task_selected_for_study.csv": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+      "pilotResult_combinedAIandNoAI.xlsx": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f"
+    }
+  },
+  "maximum_transport_and_unrestricted_error": 4.440892098500626e-16
+}

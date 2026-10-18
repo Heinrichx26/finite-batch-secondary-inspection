@@ -1,0 +1,50 @@
+{
+  "doi": "10.6084/m9.figshare.30316936.v2",
+  "title": "Impact of EXplainable AI on Trust Evolution with AI Error Severity: Comparing Similar Instances and Saliency Map in a Baggage Screening Task",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "authors": [
+    "Yixuan Wang",
+    "Jieqiong Zhao",
+    "Yang Ba",
+    "Michelle V. Mancenido",
+    "Erin K. Chiou",
+    "Ross Maciejewski"
+  ],
+  "files": [
+    {
+      "name": "behavior_NRA_group.csv",
+      "sha256": "6f065c46f5c7e67973895e1931693dde3018db895a645a3b77516f8b73133d36",
+      "figshare_md5": "382d6d2cf8f829a235e54a7e88343da3",
+      "download_url": "https://ndownloader.figshare.com/files/58596682"
+    },
+    {
+      "name": "behavior_RA_group.csv",
+      "sha256": "b4e9a8b4189ba6eb854e5b674e6801ff40b4c6fbdebd2b3b47b1aea99e6323b3",
+      "figshare_md5": "062e17af1cd416a93d5cba724b7f78c0",
+      "download_url": "https://ndownloader.figshare.com/files/58596685"
+    },
+    {
+      "name": "behavior_XAI_presented_beforeAndAfter_trustViolation.csv",
+      "sha256": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+      "figshare_md5": "9640f9ae9b9647b1798197903fbbc4c8",
+      "download_url": "https://ndownloader.figshare.com/files/58596688"
+    },
+    {
+      "name": "task_selected_for_study.csv",
+      "sha256": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+      "figshare_md5": "d3e12dfdda6d2c03a3f65bc781e1e39c",
+      "download_url": "https://ndownloader.figshare.com/files/58596805"
+    },
+    {
+      "name": "pilotResult_combinedAIandNoAI.xlsx",
+      "sha256": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f",
+      "figshare_md5": "d70fb36cbcedf02e5d9836b856a7e1e1",
+      "download_url": "https://ndownloader.figshare.com/files/58596760"
+    }
+  ],
+  "local_originals_match_published_md5": true
+}

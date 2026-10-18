@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "smoke": true,
+  "source_sha256": {
+    "check_finite_population_kernel.py": "2379571d53162b850b4799cc6f9874c30fcfd8480367de91d2212b46fdf971b5",
+    "finite_population_policy_kernel.py": "6cc4eb310622d62007afc6f2bea50cc932d14e96ede66816339b1e6711848aa3"
+  },
+  "no_source_data_required": true,
+  "max_population": 4,
+  "hand_calculations": {
+    "four_item_effects": [
+      "1/8",
+      "-1/8",
+      "1/4",
+      "-1/4"
+    ],
+    "five_item_review_curve": [
+      "0",
+      "1/5",
+      "2/5",
+      "3/10",
+      "2/5",
+      "1/2"
+    ]
+  },
+  "invalid_input_checks": 7,
+  "exact_probability_checks": 742,
+  "exact_decomposition_checks": 742,
+  "directly_enumerated_samples": 351,
+  "equal_two_type_minimality_checks": 124,
+  "condition_checks": {
+    "near_full_formula_checks": 661,
+    "binomial_distributions_checked": 60,
+    "binomial_capacity_sign_checks": 315,
+    "subprobability_masses_checked": [
+      "1",
+      "2/3"
+    ],
+    "logconcavity_is_insufficient": true,
+    "logconcave_counterexample_effects": [
+      "0",
+      "0",
+      "-2/209",
+      "-2/209",
+      "2/1045",
+      "-2/5",
+      "-2/5"
+    ],
+    "sufficient_condition_is_claimed_necessary": false
+  },
+  "joint_feasibility_family": {
+    "population_sizes_checked": [
+      3,
+      10
+    ],
+    "exact_family_formula_checks": 11,
+    "exact_mean_risk_checks": 11,
+    "full_domain_checks_only_through_N": 10,
+    "large_population_checks_use_selected_counts_and_algebraic_formula": true,
+    "joint_feasible_counts_formula": "{N-2,N}",
+    "largest_population": 10,
+    "largest_population_reliability_target": "4/5",
+    "largest_population_miss_limit": "1/5",
+    "arbitrary_epsilon_construction_verified": true,
+    "target_detection_in_this_family_is_perfect": true
+  },
+  "disconnected_review_examples": 3,
+  "maximum_reversal_population": 6,
+  "maximum_strict_reversals": 5,
+  "nonconnected_minimum_population": 3,
+  "nonconnected_equal_two_type_minimum_population": 4,
+  "finite_population_checks_exact_rational": true,
+  "counterexamples_prove_general_interval_assumption_invalid": true,
+  "seconds": 0.03256369999144226
+}

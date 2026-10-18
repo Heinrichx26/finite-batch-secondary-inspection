@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "joint_failure_linear_programs": 72,
+  "exact_binomial_checks": 18,
+  "subset_kernel_checks": 80,
+  "maximum_absolute_error": 4.440892098500626e-16,
+  "smoke": true,
+  "seconds": 0.07073378562927246
+}

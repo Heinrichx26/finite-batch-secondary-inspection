@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+matplotlib
+openpyxl
+statsmodels
+scikit-learn
+threadpoolctl
+numba

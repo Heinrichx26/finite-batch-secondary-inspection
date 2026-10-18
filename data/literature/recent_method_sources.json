@@ -1,0 +1,23 @@
+{
+  "description": "Public bibliographic records and source-document digests for method adaptations; no full-text input is needed by the algorithms.",
+  "references": [
+    {
+      "reference_key": "maisano2026",
+      "doi": "10.1002/qre.70291",
+      "bibliographic_record": "Maisano DA, Ferrara L, Franceschini F. Lot Acceptance Under Inspection Errors: Benefits of Multiple-Inspector Sampling Versus Single-Inspector 100\\% Inspection. Quality and Reliability Engineering International. 2026;42(7):3736-3749. Available online 2026.\n\\url{https://doi.org/10.1002/qre.70291}.",
+      "audited_source_text_sha256": "ebd694b497e659e583733f4363ac3a49935f67825ebb0eb1134ee48f28904292"
+    },
+    {
+      "reference_key": "yang2024",
+      "doi": "10.1016/j.ress.2024.110240",
+      "bibliographic_record": "Yang L, Zhang X, Lu Z, Fu Y, Moens D, Beer M. Reliability evaluation of a multi-state system with dependent components and imprecise parameters: A structural reliability treatment. Reliability Engineering \\& System Safety. 2024;250:110240.\n\\url{https://doi.org/10.1016/j.ress.2024.110240}.",
+      "audited_source_text_sha256": "a8cd3ab848300cfdaae038d8f698da2b62a669ce081d9fd2d23284382e035083"
+    },
+    {
+      "reference_key": "li2026bdd",
+      "doi": "10.1016/j.ress.2026.112187",
+      "bibliographic_record": "Li XY, Wang H, Li H, Xiong X, Yang Z, Huang HZ, Beer M, Wang J. Reliability-Based Maintenance Optimization of Reusable Phased Mission Systems. Reliability Engineering \\& System Safety. 2026;270:112187.\n\\url{https://doi.org/10.1016/j.ress.2026.112187}.",
+      "audited_source_text_sha256": "44a2a455eae534b61164fdc350b342b7b690d3abd2bc0333649dd72c1c0b206e"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "empirical_bound": [
+    0.5,
+    0.5
+  ],
+  "perturbed_bound": [
+    0.4,
+    0.6
+  ],
+  "tipping_radius": 0.09999999999999998,
+  "unrestricted_bound": [
+    0.0,
+    1.0
+  ],
+  "source_sha256": {
+    "marginal_weight_sensitivity.py": "6722a72333b0dfb18379368534f202e7d9f016a73bba89acfd231b7e8352c7fc",
+    "full_counterfactual_model.py": "bac364ea92fadaae90a4cfaf19399277735c397e8553bde799998fc69e40d49a"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "status": "smoke_passed",
+  "constructed_worlds": [
+    [
+      [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      1
+    ],
+    [
+      [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      1
+    ]
+  ],
+  "limits": {
+    "readings": 3,
+    "searches": 1
+  },
+  "adaptive": {
+    "complete_target_success": 0.5,
+    "mean_missed_target_fraction": 0.5,
+    "average_readings": 1.5,
+    "average_searches": 1.0
+  },
+  "uniform_referral_stop": {
+    "complete_target_success": 0.5,
+    "mean_missed_target_fraction": 0.5,
+    "average_readings": 1.6666666666666667,
+    "average_searches": 1.0
+  },
+  "best_precommitted_group_schedule": {
+    "complete_target_success": 0.5,
+    "mean_missed_target_fraction": 0.5,
+    "average_readings": 1.5,
+    "average_searches": 1.0
+  },
+  "best_precommitted_schedule": [
+    0,
+    0,
+    0
+  ],
+  "independent_order_enumeration": {
+    "adaptive_matches": true,
+    "uniform_matches": true,
+    "fixed_schedule_matches": true
+  },
+  "independent_action_tree_optimum": {
+    "enumerated_trees": 723,
+    "matches": true
+  },
+  "exact_fraction_values": true,
+  "hidden_target_identities_used_online": false,
+  "search_feedback_used_online": false,
+  "bellman_state_count": 12
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "fingerprints": {
+    "scripts": {
+      "review_detection_requirements.py": "3da8ddd1f9149627a4d6c9ee9372f1cec147301f9b12e32841b4e14224c8da82",
+      "full_counterfactual_model.py": "bac364ea92fadaae90a4cfaf19399277735c397e8553bde799998fc69e40d49a",
+      "marginal_weight_sensitivity.py": "6722a72333b0dfb18379368534f202e7d9f016a73bba89acfd231b7e8352c7fc"
+    },
+    "data": {
+      "behavior_NRA_group.csv": "6f065c46f5c7e67973895e1931693dde3018db895a645a3b77516f8b73133d36",
+      "behavior_RA_group.csv": "b4e9a8b4189ba6eb854e5b674e6801ff40b4c6fbdebd2b3b47b1aea99e6323b3",
+      "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+      "task_selected_for_study.csv": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+      "pilotResult_combinedAIandNoAI.xlsx": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f"
+    }
+  },
+  "literal_profile_cases": 900,
+  "maximum_literal_sum_error": 2.220446049250313e-16,
+  "maximum_scaling_error": 0.0,
+  "maximum_LP_assignment_error": 1.1102230246251565e-16,
+  "source_counts": {
+    "eligible_population": 244,
+    "eligible_targets": 2,
+    "mandatory_inspections": 796
+  },
+  "no_detection_risk_constraint_applied": true
+}

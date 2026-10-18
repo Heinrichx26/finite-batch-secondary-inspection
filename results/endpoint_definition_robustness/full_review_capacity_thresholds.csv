@@ -1,0 +1,7 @@
+endpoint,review_count,success_requirement,minimum_capacity,joint_lower_at_threshold,risk_feasible_at_threshold
+gun,244,0.8,949.0,0.8665269419854461,True
+gun,244,0.9,969.0,0.9628077133171622,True
+gun_knife,244,0.8,949.0,0.8401596974797941,True
+gun_knife,244,0.9,969.0,0.9335107749775491,True
+all_labels,244,0.8,969.0,0.8373969734623046,True
+all_labels,244,0.9,,,

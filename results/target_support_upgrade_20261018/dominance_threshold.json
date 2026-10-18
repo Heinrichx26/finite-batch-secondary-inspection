@@ -1,0 +1,12 @@
+{
+  "capacity": 930,
+  "partial_reviews": 218,
+  "full_reviews": 244,
+  "target_failure_probability_at_loss_of_strict_dominance": 0.010645757371526923,
+  "effects_around_threshold": [
+    -2.021520609241101e-08,
+    0.0,
+    2.021520611322769e-08
+  ],
+  "verified": true
+}

@@ -1,0 +1,18 @@
+{
+  "source_doi": "10.6084/m9.figshare.30316936.v2",
+  "source_sha256": {
+    "behavior_NRA_group.csv": "6f065c46f5c7e67973895e1931693dde3018db895a645a3b77516f8b73133d36",
+    "behavior_RA_group.csv": "b4e9a8b4189ba6eb854e5b674e6801ff40b4c6fbdebd2b3b47b1aea99e6323b3",
+    "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+    "task_selected_for_study.csv": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+    "pilotResult_combinedAIandNoAI.xlsx": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f"
+  },
+  "license": "CC BY 4.0",
+  "primary_records": 1040,
+  "secondary_people": 20,
+  "response_combinations": 100,
+  "combinations_are_not_independent_people": true,
+  "seconds_unit_from_source_description": "seconds",
+  "TaskTime_is_total_online_task_duration_including_interface_actions": true,
+  "physical_inspection_duration_separate_scenario": true
+}

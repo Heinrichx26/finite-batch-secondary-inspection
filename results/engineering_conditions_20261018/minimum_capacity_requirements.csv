@@ -1,0 +1,7 @@
+﻿frequency_radius,completion_conditional_lower,target_success,minimum_full_review_capacity,success_at_minimum
+0.0,1.0,0.8,949,0.8382599999999999
+0.0,0.95,0.8,969,0.8848299999999999
+0.0,0.9,0.8,969,0.8382599999999999
+0.05,1.0,0.8,969,0.9314
+0.05,0.95,0.8,969,0.88483
+0.05,0.9,0.8,969,0.83826

@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-10-18",
+  "reference": {
+    "authors": ["Boyuan Zhang", "Yi-Xuan Zheng", "Zhaoyi Liu", "Yu Liu"],
+    "title": "Sequential inspection policy optimization for hierarchical multistate systems",
+    "journal": "Reliability Engineering & System Safety",
+    "year": 2025,
+    "volume": "262",
+    "article_number": "111185",
+    "doi": "10.1016/j.ress.2025.111185",
+    "publisher_pii": "S0951832025003862",
+    "online_date": "2025-04-23"
+  },
+  "metadata_sources": [
+    "Crossref exact DOI record saved as crossref_raw.json",
+    "OpenAlex exact DOI record saved as openalex_raw.json",
+    "Elsevier metadata XML saved as elsevier_raw.xml"
+  ],
+  "method_source_available": "Publisher-supplied abstract indexed by RePEc, cached in data/literature/manuscript_20261017/sequential_policy_repec.txt",
+  "full_text_obtained": false,
+  "access_status": "OpenAlex lists closed access and no repository full text. Publisher full-text endpoint requires authentication; no access restriction was bypassed.",
+  "supported_connection": [
+    "finite-horizon partially observable Markov decision process",
+    "sequential multilevel inspection under uncertain system condition",
+    "value iteration with condensed state and action spaces described in the abstract"
+  ],
+  "adaptation_implemented": [
+    "two-stratum finite-population belief state with exact category inventories",
+    "Bayesian updates after chosen stratum and binary referral response",
+    "finite-horizon Bellman recursion with hard reading and search limits",
+    "complete-target referral probability as primary objective",
+    "rational probability arithmetic and independent item-order enumeration",
+    "matched-resource fixed and uniform-stopping comparators",
+    "resource and prior misspecification sensitivity"
+  ],
+  "source_algorithm_claims_excluded": [
+    "reproduction of system-specific condensed-state/action reduction algorithm",
+    "reproduction of pipeline and actuator engineering case studies",
+    "claim that constructed outcomes estimate airport checkpoint performance"
+  ]
+}

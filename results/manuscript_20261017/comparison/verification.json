@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "smoke": false,
+  "source_sha256": {
+    "src\\recent_method_comparison.py": "798208cb87ce3c536fd48f973f02a1075b52fc206f69250330c37f767b18ba92",
+    "src\\run_recent_method_comparison.py": "a4b04db054642e80e5fca18bdc892b66e6810355ef48c04658290bde0069108a",
+    "src\\finite_population_policy_kernel.py": "6cc4eb310622d62007afc6f2bea50cc932d14e96ede66816339b1e6711848aa3",
+    "data\\literature\\general_method_20261017\\lot_errors_fulltext.txt": "ebd694b497e659e583733f4363ac3a49935f67825ebb0eb1134ee48f28904292",
+    "data\\literature\\fit_audit\\imprecise_dependence_fulltext.txt": "a8cd3ab848300cfdaae038d8f698da2b62a669ce081d9fd2d23284382e035083",
+    "data\\literature\\fit_audit\\phased_mission_fulltext.txt": "44a2a455eae534b61164fdc350b342b7b690d3abd2bc0333649dd72c1c0b206e"
+  },
+  "source_data_not_expanded": true,
+  "new_queue_simulations": 0,
+  "smoke_checks": {
+    "passed": true,
+    "majority_subset_checks": 8,
+    "source_reported_risk_checks": 2,
+    "original_OC_boundary_checks": 6,
+    "independent_panel_event_checks": 1,
+    "exhaustive_graph_checks": 1008,
+    "copula_marginal_checks": 15,
+    "importance_identity_checks": 5,
+    "source_producer_risk": 0.10593392210440344,
+    "source_consumer_risk": 0.10839414735881364
+  },
+  "graph_comparison": {
+    "graph_conditions": 40,
+    "maximum_graph_error": 5.551115123125783e-16,
+    "policies_and_resource_values_identical": true
+  },
+  "dependence_comparison": {
+    "copula_conditions": 45,
+    "sampling_rows": 60,
+    "numerical_family_extrema_are_not_unrestricted_sharp_bounds": true,
+    "copula_parameters_fitted_to_source": false,
+    "source_task_ordering": [
+      [
+        8,
+        6,
+        9,
+        0,
+        3,
+        5,
+        4,
+        1,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        8,
+        6,
+        9,
+        3,
+        7,
+        1,
+        2
+      ]
+    ],
+    "simulated_inner_event_not_replaced_by_exact_payoff": true,
+    "equal_conditional_event_evaluation_budgets": true,
+    "sampling_repetitions": 128
+  },
+  "maisano_reproduction": {
+    "original_rate_conditions": 8,
+    "adapted_candidate_count": 4920,
+    "common_resource_scenarios": 36,
+    "real_response_rates_estimated": false,
+    "original_and_adapted_endpoints_separate": true
+  },
+  "usable_for_algorithm_and_assumption_comparison": true,
+  "usable_for_new_field_validation": false,
+  "no_claim_all_comparators_are_policy_optimizers": true,
+  "seconds": 6.430512999999337
+}

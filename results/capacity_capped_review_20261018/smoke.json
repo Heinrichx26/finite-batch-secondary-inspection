@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "fingerprints": {
+    "scripts": {
+      "capacity_capped_review_study.py": "4aede58762a3c80c5f7ffa4efa14ef920cf624ff7216baf87ca81852395cfb8d",
+      "capacity_upgrade_model.py": "7c575a51043f19e86cc43022eb138c80d154e0b2071556769a3ce032bec427e7",
+      "target_support_upgrade.py": "fa23811ff40664057b296e09096664841be86dea096c39af6fe3d021944da095"
+    },
+    "source": {
+      "behavior_NRA_group.csv": "6f065c46f5c7e67973895e1931693dde3018db895a645a3b77516f8b73133d36",
+      "behavior_RA_group.csv": "b4e9a8b4189ba6eb854e5b674e6801ff40b4c6fbdebd2b3b47b1aea99e6323b3",
+      "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+      "task_selected_for_study.csv": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+      "pilotResult_combinedAIandNoAI.xlsx": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f"
+    }
+  },
+  "exact_configuration_checks": 3317,
+  "individual_random_orders_checked": 265036,
+  "additional_success_orders": 7945,
+  "maximum_old_kernel_error": 4.440892098500626e-16,
+  "maximum_source_kernel_error": 1.2223555501122974e-13,
+  "every_fixed_success_path_retained": true,
+  "target_incomplete_states_included": true
+}

@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "smoke": true,
+  "source_sha256": {
+    "src\\recent_method_comparison.py": "798208cb87ce3c536fd48f973f02a1075b52fc206f69250330c37f767b18ba92",
+    "src\\run_recent_method_comparison.py": "ae0119493652428e935c6ba6d96e9e98b84ac28c3aed4141a2ac0e40d7ba61fa",
+    "src\\finite_population_policy_kernel.py": "6cc4eb310622d62007afc6f2bea50cc932d14e96ede66816339b1e6711848aa3",
+    "data\\literature\\recent_method_sources.json": "463e3efa537482411d12493f33f616224502b38ef720b1da030c786532379503"
+  },
+  "source_data_not_expanded": true,
+  "new_queue_simulations": 0,
+  "smoke_checks": {
+    "passed": true,
+    "majority_subset_checks": 8,
+    "source_reported_risk_checks": 2,
+    "original_OC_boundary_checks": 6,
+    "independent_panel_event_checks": 1,
+    "exhaustive_graph_checks": 1008,
+    "copula_marginal_checks": 15,
+    "importance_identity_checks": 5,
+    "source_producer_risk": 0.10593392210440344,
+    "source_consumer_risk": 0.10839414735881364
+  },
+  "graph_comparison": {
+    "graph_conditions": 2,
+    "maximum_graph_error": 3.3306690738754696e-16,
+    "policies_and_resource_values_identical": true
+  },
+  "dependence_comparison": {
+    "copula_conditions": 5,
+    "sampling_rows": 20,
+    "numerical_family_extrema_are_not_unrestricted_sharp_bounds": true,
+    "copula_parameters_fitted_to_source": false,
+    "source_task_ordering": [
+      [
+        8,
+        6,
+        9,
+        0,
+        3,
+        5,
+        4,
+        1,
+        2,
+        7
+      ],
+      [
+        0,
+        4,
+        5,
+        8,
+        6,
+        9,
+        3,
+        7,
+        1,
+        2
+      ]
+    ],
+    "simulated_inner_event_not_replaced_by_exact_payoff": true,
+    "equal_conditional_event_evaluation_budgets": true,
+    "sampling_repetitions": 8
+  },
+  "usable_for_algorithm_and_assumption_comparison": true,
+  "usable_for_new_field_validation": false,
+  "no_claim_all_comparators_are_policy_optimizers": true,
+  "seconds": 1.8341396999894641
+}

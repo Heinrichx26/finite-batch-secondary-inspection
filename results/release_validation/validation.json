@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-10-18T11:06:36.135911+00:00",
+  "python": "3.11.9",
+  "source_syntax_checks": 38,
+  "validation_scope": "Source syntax and six smoke calculations; stored full results retained.",
+  "runs": [
+    {
+      "command": "python src/run_manuscript_study.py --smoke",
+      "exit_code": 0,
+      "elapsed_seconds": 2.303
+    },
+    {
+      "command": "python src/capacity_capped_review_study.py --smoke",
+      "exit_code": 0,
+      "elapsed_seconds": 32.689
+    },
+    {
+      "command": "python src/run_recent_method_comparison.py --smoke",
+      "exit_code": 0,
+      "elapsed_seconds": 3.028
+    },
+    {
+      "command": "python src/compare_sequential_policies_20261018.py --smoke",
+      "exit_code": 0,
+      "elapsed_seconds": 0.113
+    },
+    {
+      "command": "python src/stopping_information_theory.py --smoke",
+      "exit_code": 0,
+      "elapsed_seconds": 0.578
+    },
+    {
+      "command": "python src/stopping_information_theory_independent.py --smoke",
+      "exit_code": 0,
+      "elapsed_seconds": 1.266
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,76 @@
+- GROUP
+AI: AI-assisted detection, human make the final decision.
+NoAI: Human detection.
+
+- user_identifier
+Randomly assigned ID for a participant. 
+
+- num_of_tv
+The total number of AI-error tasks the participant encountered in the Trust Violation phase
+tv3: 3 AI-error tasks
+tv1: 1 AI-error task
+
+- type_of_tv
+The type of AI error that the participant encountered in the Trust Violation phase
+False Alarm: There are no illicit objects in the baggage, but the AI indicated there is an illicit object.
+False Miss: There is an illicit object in the baggage, but the AI indicated there are no illicit objects.
+
+- OrigColumn, userCaseNum
+The order number of the task in the study for the participant.
+
+- ImageNumber
+The source image file name of the task image.
+
+- ground truth, GroundTruth2
+The actual illicit object in the task image.
+
+- model result
+The AI detected illicit object in the task image.
+
+- difficulty level
+The pre-defined difficulty level of the task image.
+
+- TaskType, positive or negative
+Negative: There are actually no illicit objects in the task image.
+Positive: There is at least one illicit object in the task image.
+
+- trust violation (model error)
+If this task is an AI-error task in the Trust Violation phase (yes or no).
+
+- FinalAgreement
+If this participant agree with the AI result (agree or disagree).
+
+- OpenBag
+This participant request for opening baggage and check the ground truth (true or false).
+
+- SeeXAI
+This participant request for seeing explanations of the AI result (true or false).
+
+- UserDecision, UserDecision2
+Final detection human made (with or without AI assistance).
+
+- Zoom
+The image files that the participant clicked for zooming in.
+
+- ZoomYN
+If the participant clicked any file for zooming in (1 denotes yes, 0 denotes no)
+
+- ZoomWhat
+The image files that the participant clicked for zooming in.
+Orig: The task image, the number with "x" denotes how many times that the participant clicked for zooming in this file.
+No Zoom: The participant zoom nothing.
+Sim: The explanation images (similar instances), the number with "x" denotes how many times that the participant clicked for zooming in this file.
+
+- TaskTime
+How long the participant took for this task (in seconds).
+
+- Correct
+If the participant make the correct final detection, i.e., final detection completely matched the ground truth (1 denotes yes, 0 denotes no)
+
+
+
+
+
+
+
+

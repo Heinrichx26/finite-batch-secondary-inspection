@@ -1,0 +1,16 @@
+{
+  "minimum_risk_feasible_reviews": 217,
+  "best_guarantee_capacity907": 0.5014770831936326,
+  "best_reviews_capacity907": 218,
+  "mandatory_inspections": 796,
+  "eligible_items": 244,
+  "eligible_targets": 2,
+  "source_judgments": 1040,
+  "source_target_judgments": 290,
+  "recovery_target_images": 1,
+  "response_group_sizes": [
+    10,
+    10
+  ],
+  "detection_all_targets": 0.933510774977549
+}

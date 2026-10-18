@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "coverage_savings_curve.csv": "aa299493d206d8f8fcf9ce439e88a412ebb234a01eb8ec2f321951b94ed5cbc6",
+    "target_failure_detection_requirements.csv": "82011fa25848fd92017777b8bb7d2e35efaf39da5ff0c7986b1a4254a0259dc9",
+    "plot_three_point_upgrade.py": "1452ff92c3de64179a352e69576abbb86927779a44f94357354cf3fd2a7c00f6"
+  }
+}

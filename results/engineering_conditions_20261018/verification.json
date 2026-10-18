@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "joint_failure_linear_programs": 1323,
+  "exact_binomial_checks": 18,
+  "subset_kernel_checks": 590,
+  "maximum_absolute_error": 1.1102230246251565e-15,
+  "source_route_target_counts": [
+    286,
+    2,
+    2
+  ],
+  "total_targets": 290,
+  "source_provenance": "source_record_structure and paired_responses only; no capability fit",
+  "declared_route_miss_bounds": [
+    0.0001,
+    0.01
+  ],
+  "conditional_detection_bound_arbitrary_dependence": 0.9314,
+  "independent_product_comparator": 0.933510774977549,
+  "absolute_difference": 0.002110774977548968,
+  "capability_rows": 15,
+  "validation_rows": 4,
+  "composition_rows": 20,
+  "measured_detection_or_service_inputs": false,
+  "smoke": false,
+  "seconds": 1.5785901546478271
+}

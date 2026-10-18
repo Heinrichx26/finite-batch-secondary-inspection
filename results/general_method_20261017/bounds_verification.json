@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "saved_simulations_reused": true,
+  "new_queue_simulations": 0,
+  "deadline_scenarios": 6,
+  "design_rows": 24,
+  "largest_numerical_certificate_gap": 8.049116928532385e-16,
+  "comparator": "same prespecified three-policy catalogue",
+  "same_staff_service_arrivals_and_deadline": true,
+  "actual_mean_resource_use_is_policy_dependent": true,
+  "overall_simulation_error_budget": 0.05,
+  "success_family_alpha": 0.025,
+  "risk_family_alpha": 0.025,
+  "lower_certificate_bounds_optimization_value_only": true,
+  "simulation_envelope_does_not_cover_source_population": true,
+  "smoke": false,
+  "seconds": 1.5596543999999994,
+  "source_hashes": {
+    "robust_policy_bounds.py": "80a3d54d1adda8db567b298165339c9cc0b11b0b550d8d31f6463f138434efa7",
+    "run_general_policy_bounds.py": "beed7cdbafd829d88c4116fa561ead51690e2257f25acfaacf291a0ce5be10b2"
+  }
+}

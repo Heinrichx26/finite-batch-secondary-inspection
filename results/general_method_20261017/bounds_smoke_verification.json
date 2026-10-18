@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": 37,
+  "weighted_transport_matches_analytic_endpoints": true,
+  "additive_interaction_identified": true,
+  "regret_matches_hand_calculation": true,
+  "common_policy_uncertainty_cancels": true,
+  "robust_budget_constraint_verified": true,
+  "moment_information_example_is_hypothetical": true,
+  "smoke": true,
+  "seconds": 0.06756359999417327,
+  "source_hashes": {
+    "robust_policy_bounds.py": "80a3d54d1adda8db567b298165339c9cc0b11b0b550d8d31f6463f138434efa7",
+    "run_general_policy_bounds.py": "beed7cdbafd829d88c4116fa561ead51690e2257f25acfaacf291a0ce5be10b2"
+  }
+}

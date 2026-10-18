@@ -1,0 +1,112 @@
+{
+  "cases": 125,
+  "capacity_LP_comparisons": 866,
+  "minimum_capacity_checks": 375,
+  "largest_absolute_error": 2.42861286636753e-16,
+  "application_rows": [
+    {
+      "radius": 0.0,
+      "lower_at_949": 0.8401596974797942,
+      "ceiling": 0.933510774977549,
+      "minimum_capacity_80": 949,
+      "guarantee_80": 0.8401596974797942,
+      "minimum_capacity_90": 969,
+      "guarantee_90": 0.933510774977549
+    },
+    {
+      "radius": 0.01,
+      "lower_at_949": 0.8308245897300187,
+      "ceiling": 0.933510774977549,
+      "minimum_capacity_80": 949,
+      "guarantee_80": 0.8308245897300187,
+      "minimum_capacity_90": 969,
+      "guarantee_90": 0.933510774977549
+    },
+    {
+      "radius": 0.025,
+      "lower_at_949": 0.8168219281053554,
+      "ceiling": 0.933510774977549,
+      "minimum_capacity_80": 949,
+      "guarantee_80": 0.8168219281053554,
+      "minimum_capacity_90": 969,
+      "guarantee_90": 0.933510774977549
+    },
+    {
+      "radius": 0.05,
+      "lower_at_949": 0.7934841587309167,
+      "ceiling": 0.933510774977549,
+      "minimum_capacity_80": 969,
+      "guarantee_80": 0.933510774977549,
+      "minimum_capacity_90": 969,
+      "guarantee_90": 0.933510774977549
+    },
+    {
+      "radius": 0.1,
+      "lower_at_949": 0.7468086199820392,
+      "ceiling": 0.933510774977549,
+      "minimum_capacity_80": 969,
+      "guarantee_80": 0.933510774977549,
+      "minimum_capacity_90": 969,
+      "guarantee_90": 0.933510774977549
+    },
+    {
+      "radius": 0.2,
+      "lower_at_949": 0.6534575424842844,
+      "ceiling": 0.933510774977549,
+      "minimum_capacity_80": 969,
+      "guarantee_80": 0.933510774977549,
+      "minimum_capacity_90": 969,
+      "guarantee_90": 0.933510774977549
+    },
+    {
+      "radius": 1.0,
+      "lower_at_949": 0.0,
+      "ceiling": 0.933510774977549,
+      "minimum_capacity_80": 969,
+      "guarantee_80": 0.933510774977549,
+      "minimum_capacity_90": 969,
+      "guarantee_90": 0.933510774977549
+    }
+  ],
+  "source_hashes": {
+    "behavior_NRA_group.csv": "6f065c46f5c7e67973895e1931693dde3018db895a645a3b77516f8b73133d36",
+    "behavior_RA_group.csv": "b4e9a8b4189ba6eb854e5b674e6801ff40b4c6fbdebd2b3b47b1aea99e6323b3",
+    "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+    "task_selected_for_study.csv": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+    "pilotResult_combinedAIandNoAI.xlsx": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f"
+  },
+  "detection_factor": 0.933510774977549,
+  "mandatory_plus_targets": 798,
+  "first_loads": [
+    33.0,
+    56.0,
+    56.0,
+    38.0,
+    44.0,
+    40.0,
+    13.0,
+    75.0,
+    0.0,
+    18.0
+  ],
+  "second_loads": [
+    7.0,
+    76.0,
+    96.0,
+    62.0,
+    33.0,
+    33.0,
+    45.0,
+    65.0,
+    33.0,
+    59.0
+  ],
+  "passed": true,
+  "smoke": false,
+  "source_sha256": {
+    "robust_capacity_reweighting.py": "294166f1796e2077eed299647df2d1168e904402c74aa9dcfed0cd809a9e4476",
+    "resource_capacity_bounds.py": "da20a3ea7a11e0223e8fb205d2da82ba21eafdaaf5ee49967d015c24c193f65a",
+    "marginal_weight_sensitivity.py": "6722a72333b0dfb18379368534f202e7d9f016a73bba89acfd231b7e8352c7fc"
+  },
+  "seconds": 3.4222493171691895
+}

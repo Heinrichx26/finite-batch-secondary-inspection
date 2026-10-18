@@ -1,0 +1,4 @@
+endpoint,positive_tasks,mandatory_target_count,original_target_count,alarm_target_count,eligible_target_count,eligible_pool,reference_capacity,minimum_review_for_risk,best_lower_success_review,best_lower_success,full_review_lower_success_at_907,full_review_mean_success_at_907,full_review_mean_miss_at_907,unlimited_success_ceiling
+gun,180,180,178,2,0,244,907,0,0,0.9628077133171622,0.4814038566585811,0.7317338621210433,0.00020999999999998922,0.9628077133171622
+gun_knife,290,288,286,2,2,244,907,217,218,0.5014770831936326,0.46675538748877454,0.7094681889829373,0.0002365517241379203,0.9335107749775491
+all_labels,680,671,669,2,9,244,907,231,244,0.4186984867311523,0.4186984867311523,0.6364216998313514,0.0002601470588235184,0.8373969734623046

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "smoke": true,
+  "maximum_N": 4,
+  "exact_inequality_checks": 754,
+  "strict_lower_examples": 27,
+  "strict_upper_examples": 22,
+  "attained_lower_examples": 350,
+  "attained_upper_examples": 355,
+  "largest_error": 0,
+  "enumeration_includes_omitted_targets": true,
+  "source_sha256": {
+    "validate_review_capacity_tradeoff.py": "f11acedea19894d217de4f5efafac99f30e92d93526a21cff34a9f6248f95706",
+    "resource_capacity_bounds.py": "da20a3ea7a11e0223e8fb205d2da82ba21eafdaaf5ee49967d015c24c193f65a",
+    "robust_policy_bounds.py": "80a3d54d1adda8db567b298165339c9cc0b11b0b550d8d31f6463f138434efa7"
+  },
+  "seconds": 0.002087699991534464
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "endpoint": "gun",
+    "rows": 2205,
+    "risk_feasible_rows": 2205,
+    "lower_success_min": 0.0,
+    "lower_success_max": 0.9628077133171622,
+    "mean_miss_min": 0.00020999999999998922,
+    "mean_miss_max": 0.00020999999999998922
+  },
+  {
+    "endpoint": "gun_knife",
+    "rows": 2205,
+    "risk_feasible_rows": 252,
+    "lower_success_min": 0.0,
+    "lower_success_max": 0.9335107749775491,
+    "mean_miss_min": 0.0002365517241379203,
+    "mean_miss_max": 0.007064137931034472
+  },
+  {
+    "endpoint": "all_labels",
+    "rows": 2205,
+    "risk_feasible_rows": 126,
+    "lower_success_min": 0.0,
+    "lower_success_max": 0.8373969734623046,
+    "mean_miss_min": 0.0002601470588235184,
+    "mean_miss_max": 0.013363088235294108
+  }
+]

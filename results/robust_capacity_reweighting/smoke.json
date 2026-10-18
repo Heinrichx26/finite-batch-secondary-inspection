@@ -1,0 +1,14 @@
+{
+  "cases": 15,
+  "capacity_LP_comparisons": 99,
+  "minimum_capacity_checks": 45,
+  "largest_absolute_error": 1.1102230246251565e-16,
+  "passed": true,
+  "smoke": true,
+  "source_sha256": {
+    "robust_capacity_reweighting.py": "294166f1796e2077eed299647df2d1168e904402c74aa9dcfed0cd809a9e4476",
+    "resource_capacity_bounds.py": "da20a3ea7a11e0223e8fb205d2da82ba21eafdaaf5ee49967d015c24c193f65a",
+    "marginal_weight_sensitivity.py": "6722a72333b0dfb18379368534f202e7d9f016a73bba89acfd231b7e8352c7fc"
+  },
+  "seconds": 0.18243408203125
+}

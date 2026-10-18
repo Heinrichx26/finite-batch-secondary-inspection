@@ -1,0 +1,5 @@
+﻿validation_input,trial_unit,required_success_probability,one_sided_error_allowance,minimum_all_success_trials,exact_lower_at_minimum,exact_lower_one_fewer
+joint_detection_C949_radius0,completed target-matched batch,0.8888888888888888,0.05,26,0.8911696442392152,0.8870718549931568
+joint_detection_C949_radius005,completed target-matched batch,0.9411764705882353,0.05,50,0.9418449208830277,0.940693985810303
+original_request_search,target search in original-request route,0.9999,0.025,36887,0.9999000001353507,0.9998999974244343
+retained_or_optional_search,target search in alarm-or-optional route,0.99,0.025,368,0.9900259451730536,0.989998904267854

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "participant_weight_bootstrap.py": "4777828a4cb7e0b19bd6e8b3e96a0d364b46abd55c9f6ae31a2ab9a1f356e4da",
+    "full_counterfactual_model.py": "bac364ea92fadaae90a4cfaf19399277735c397e8553bde799998fc69e40d49a",
+    "marginal_weight_sensitivity.py": "6722a72333b0dfb18379368534f202e7d9f016a73bba89acfd231b7e8352c7fc"
+  },
+  "seed": 20261017,
+  "replicates": 2000,
+  "participants_per_group": [
+    10,
+    10
+  ],
+  "capacities": [
+    907,
+    930
+  ],
+  "primary_endpoint": "gun_knife",
+  "effect_sign": "partial-review success minus full-review success under the same joint law",
+  "common_law_bounds_recomputed_for_each_resample": true,
+  "bootstrap_frequency_is_confidence_level": false,
+  "nominal_C930_tipping_radius": 0.0010760340561493673,
+  "median_minimum_group_TV": 0.3,
+  "rows": 4000,
+  "seconds": 12.307923199987272
+}

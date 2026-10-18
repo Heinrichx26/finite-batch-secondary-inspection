@@ -1,0 +1,32 @@
+{
+  "hand_checks": 9,
+  "random_cases": 320,
+  "threshold_LP_checks": 4309,
+  "compression_extrema_checks": 8618,
+  "capacity_necessary_sufficient_checks": 1600,
+  "includes_infinite_load_cases": 160,
+  "includes_zero_weight_cases": 184,
+  "includes_unequal_weight_cases": 309,
+  "largest_absolute_error": 2.220446049250313e-16,
+  "source_kernel_and_transport_comparisons": 498,
+  "largest_source_absolute_error": 3.3306690738754696e-16,
+  "source_hashes": {
+    "behavior_NRA_group.csv": "6f065c46f5c7e67973895e1931693dde3018db895a645a3b77516f8b73133d36",
+    "behavior_RA_group.csv": "b4e9a8b4189ba6eb854e5b674e6801ff40b4c6fbdebd2b3b47b1aea99e6323b3",
+    "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+    "task_selected_for_study.csv": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+    "pilotResult_combinedAIandNoAI.xlsx": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f"
+  },
+  "source_results_condition_on_fixed_marginals": true,
+  "population_uncertainty_included": false,
+  "queue_simulations_run": false,
+  "passed": true,
+  "smoke": false,
+  "seconds": 22.96423840522766,
+  "source_sha256": {
+    "check_resource_capacity_bounds.py": "5798056049e83b574a0b08dd86890d8256edfb95414cc7d25d6f5d6efc129851",
+    "resource_capacity_bounds.py": "da20a3ea7a11e0223e8fb205d2da82ba21eafdaaf5ee49967d015c24c193f65a",
+    "robust_policy_bounds.py": "80a3d54d1adda8db567b298165339c9cc0b11b0b550d8d31f6463f138434efa7"
+  },
+  "fixed_marginal_bounds_only": true
+}

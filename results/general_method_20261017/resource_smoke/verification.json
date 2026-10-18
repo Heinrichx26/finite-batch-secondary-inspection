@@ -1,0 +1,20 @@
+{
+  "hand_checks": 9,
+  "random_cases": 36,
+  "threshold_LP_checks": 480,
+  "compression_extrema_checks": 960,
+  "capacity_necessary_sufficient_checks": 180,
+  "includes_infinite_load_cases": 18,
+  "includes_zero_weight_cases": 19,
+  "includes_unequal_weight_cases": 35,
+  "largest_absolute_error": 2.220446049250313e-16,
+  "passed": true,
+  "smoke": true,
+  "seconds": 2.299208641052246,
+  "source_sha256": {
+    "check_resource_capacity_bounds.py": "5798056049e83b574a0b08dd86890d8256edfb95414cc7d25d6f5d6efc129851",
+    "resource_capacity_bounds.py": "da20a3ea7a11e0223e8fb205d2da82ba21eafdaaf5ee49967d015c24c193f65a",
+    "robust_policy_bounds.py": "80a3d54d1adda8db567b298165339c9cc0b11b0b550d8d31f6463f138434efa7"
+  },
+  "fixed_marginal_bounds_only": true
+}

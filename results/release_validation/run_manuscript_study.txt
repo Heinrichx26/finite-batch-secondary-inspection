@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "smoke": true,
+  "policy_cells": 24,
+  "effect_cells": 24,
+  "source_sha256": {
+    "run_manuscript_study.py": "266c0fc870b8b2bbcadf6b09d1a02af30f9a7a984a45f0d242f04db0509b1550",
+    "full_counterfactual_model.py": "bac364ea92fadaae90a4cfaf19399277735c397e8553bde799998fc69e40d49a"
+  },
+  "elapsed_seconds": 0.7288329000002705,
+  "matches_existing_paired_witnesses": true,
+  "population_confidence_claim": false,
+  "substantive_evaluation": "Exact kernel and common-coupling witnesses agree; usable as a conditional finite-batch illustration."
+}

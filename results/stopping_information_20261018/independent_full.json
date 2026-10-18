@@ -1,0 +1,8 @@
+{
+  "literal_target_placement_games": 735,
+  "literal_joint_success_risk_games": 405,
+  "literal_within_group_stopping_cases": 100,
+  "max_value_gap": 5.828670879282072e-16,
+  "local_stopping_exact_arithmetic_error": 0,
+  "local_expected_readings_exact_arithmetic_error": 0
+}

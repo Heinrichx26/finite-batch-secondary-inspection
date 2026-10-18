@@ -1,0 +1,10 @@
+{
+  "max_group_capacity": 4,
+  "checked_full_uncertainty_games": 520,
+  "checked_known_compositions": 1220,
+  "checked_two_composition_games": 1060,
+  "strict_improvement_cases": 279,
+  "max_primal_dual_or_full_set_gap": 2.220446049250313e-16,
+  "max_known_composition_greedy_error": 0.0,
+  "max_mean_recovery_greedy_error": 0.0
+}

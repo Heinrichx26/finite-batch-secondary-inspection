@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "participant_weight_bootstrap.py": "4777828a4cb7e0b19bd6e8b3e96a0d364b46abd55c9f6ae31a2ab9a1f356e4da",
+    "full_counterfactual_model.py": "bac364ea92fadaae90a4cfaf19399277735c397e8553bde799998fc69e40d49a",
+    "marginal_weight_sensitivity.py": "6722a72333b0dfb18379368534f202e7d9f016a73bba89acfd231b7e8352c7fc"
+  },
+  "participants_per_group": [
+    10,
+    10
+  ],
+  "bootstrap_draws_smoke": 8,
+  "paired_bounds_checked": 16,
+  "nominal_effect_bounds_C907": [
+    -0.18871112711463428,
+    0.2629139839102251
+  ],
+  "nominal_effect_bounds_C930": [
+    -0.18871112711463425,
+    -0.002008972872569764
+  ]
+}
