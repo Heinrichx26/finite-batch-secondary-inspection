@@ -1,0 +1,259 @@
+{
+  "data": {
+    "id": "10.4121/uuid:6246e6a6-d149-420f-a6a4-7afd08f154b5",
+    "type": "dois",
+    "attributes": {
+      "doi": "10.4121/uuid:6246e6a6-d149-420f-a6a4-7afd08f154b5",
+      "prefix": "10.4121",
+      "suffix": "uuid:6246e6a6-d149-420f-a6a4-7afd08f154b5",
+      "identifiers": [],
+      "alternateIdentifiers": [],
+      "creators": [
+        {
+          "name": "Janssen, Stef",
+          "nameType": "Personal",
+          "givenName": "Stef",
+          "familyName": "Janssen",
+          "nameIdentifiers": [
+            {
+              "nameIdentifier": "0000-0003-2019-2022",
+              "nameIdentifierScheme": "https://orcid.org/"
+            }
+          ],
+          "affiliation": []
+        },
+        {
+          "name": "van der Sommen, R. (Régis)",
+          "givenName": "R. (Régis)",
+          "familyName": "van der Sommen",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Dilweg, A. (Alexander)",
+          "givenName": "A. (Alexander)",
+          "familyName": "Dilweg",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Sharpanskykh, A. (Alexei)",
+          "nameType": "Personal",
+          "givenName": "A. (Alexei)",
+          "familyName": "Sharpanskykh",
+          "nameIdentifiers": [
+            {
+              "nameIdentifier": "0000-0001-6879-1134",
+              "nameIdentifierScheme": "https://orcid.org/"
+            }
+          ],
+          "affiliation": []
+        }
+      ],
+      "titles": [
+        {
+          "title": "Airport Security Checkpoint Data"
+        }
+      ],
+      "publisher": "4TU.Centre for Research Data",
+      "container": {},
+      "publicationYear": 2020,
+      "subjects": [
+        {
+          "subject": "Aerospace Transport",
+          "subjectScheme": "Australian and New Zealand Standard Research Classification (ANZSRC), 2008",
+          "classificationCode": "8803"
+        },
+        {
+          "subject": "Airport"
+        },
+        {
+          "subject": "Checkpoint"
+        },
+        {
+          "subject": "Security"
+        }
+      ],
+      "contributors": [
+        {
+          "name": "Rotterdam The Hague Airport",
+          "nameType": "Organizational",
+          "affiliation": [],
+          "contributorType": "Other",
+          "nameIdentifiers": []
+        },
+        {
+          "name": "TU Delft, Faculty Of Aerospace Engineering, Department Control & Operations",
+          "nameType": "Organizational",
+          "affiliation": [],
+          "contributorType": "Other",
+          "nameIdentifiers": []
+        }
+      ],
+      "dates": [
+        {
+          "date": "2020-05-26",
+          "dateType": "Issued"
+        }
+      ],
+      "language": "en",
+      "types": {
+        "ris": "DATA",
+        "bibtex": "misc",
+        "citeproc": "dataset",
+        "schemaOrg": "Dataset",
+        "resourceType": "Dataset",
+        "resourceTypeGeneral": "Dataset"
+      },
+      "relatedIdentifiers": [
+        {
+          "relationType": "References",
+          "relatedIdentifier": "https://doi.org/10.3390/aerospace7060069",
+          "relatedIdentifierType": "URL"
+        }
+      ],
+      "relatedItems": [],
+      "sizes": [],
+      "formats": [
+        "media types: application/pdf, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      ],
+      "version": "1",
+      "rightsList": [
+        {
+          "rights": "Creative Commons Attribution 4.0 International",
+          "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc-by-4.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "descriptions": [
+        {
+          "description": "This is dataset is published as part of the 'Data-driven Analysis of Airport Security Checkpoint Operations' paper published in the Aerospace journal.",
+          "descriptionType": "Abstract"
+        }
+      ],
+      "geoLocations": [],
+      "fundingReferences": [],
+      "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjQvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40MTIxL1VVSUQ6NjI0NkU2QTYtRDE0OS00MjBGLUE2QTQtN0FGRDA4RjE1NEI1PC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TdGVmIEphbnNzZW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlN0ZWY8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+SmFuc3NlbjwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJodHRwczovL29yY2lkLm9yZy8iPjAwMDAtMDAwMy0yMDE5LTIwMjI8L25hbWVJZGVudGlmaWVyPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5SLiAoUsOpZ2lzKSB2YW4gZGVyIFNvbW1lbjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Ui4gKFLDqWdpcyk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+dmFuIGRlciBTb21tZW48L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkEuIChBbGV4YW5kZXIpIERpbHdlZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QS4gKEFsZXhhbmRlcik8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+RGlsd2VnPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkEuIChBbGV4ZWkpIFNoYXJwYW5za3lraDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+QS4gKEFsZXhlaSk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+U2hhcnBhbnNreWtoPC9mYW1pbHlOYW1lPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9Imh0dHBzOi8vb3JjaWQub3JnLyI+MDAwMC0wMDAxLTY4NzktMTEzNDwvbmFtZUlkZW50aWZpZXI+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkFpcnBvcnQgU2VjdXJpdHkgQ2hlY2twb2ludCBEYXRhPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPjRUVS5DZW50cmUgZm9yIFJlc2VhcmNoIERhdGE8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjA8L3B1YmxpY2F0aW9uWWVhcj4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJBdXN0cmFsaWFuIGFuZCBOZXcgWmVhbGFuZCBTdGFuZGFyZCBSZXNlYXJjaCBDbGFzc2lmaWNhdGlvbiAoQU5aU1JDKSwgMjAwOCIgY2xhc3NpZmljYXRpb25Db2RlPSI4ODAzIj5BZXJvc3BhY2UgVHJhbnNwb3J0PC9zdWJqZWN0PgogICAgPHN1YmplY3Q+QWlycG9ydDwvc3ViamVjdD4KICAgIDxzdWJqZWN0PkNoZWNrcG9pbnQ8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5TZWN1cml0eTwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxjb250cmlidXRvcnM+CiAgICA8Y29udHJpYnV0b3IgY29udHJpYnV0b3JUeXBlPSJPdGhlciI+CiAgICAgIDxjb250cmlidXRvck5hbWUgbmFtZVR5cGU9Ik9yZ2FuaXphdGlvbmFsIj5Sb3R0ZXJkYW0gVGhlIEhhZ3VlIEFpcnBvcnQ8L2NvbnRyaWJ1dG9yTmFtZT4KICAgIDwvY29udHJpYnV0b3I+CiAgICA8Y29udHJpYnV0b3IgY29udHJpYnV0b3JUeXBlPSJPdGhlciI+CiAgICAgIDxjb250cmlidXRvck5hbWUgbmFtZVR5cGU9Ik9yZ2FuaXphdGlvbmFsIj5UVSBEZWxmdCwgRmFjdWx0eSBvZiBBZXJvc3BhY2UgRW5naW5lZXJpbmcsIERlcGFydG1lbnQgQ29udHJvbCAmYW1wOyBPcGVyYXRpb25zPC9jb250cmlidXRvck5hbWU+CiAgICA8L2NvbnRyaWJ1dG9yPgogIDwvY29udHJpYnV0b3JzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMjAtMDUtMjY8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVsYXRlZElkZW50aWZpZXJzPgogICAgPHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iVVJMIiByZWxhdGlvblR5cGU9IlJlZmVyZW5jZXMiPmh0dHBzOi8vZG9pLm9yZy8xMC4zMzkwL2Flcm9zcGFjZTcwNjAwNjk8L3JlbGF0ZWRJZGVudGlmaWVyPgogIDwvcmVsYXRlZElkZW50aWZpZXJzPgogIDxmb3JtYXRzPgogICAgPGZvcm1hdD5tZWRpYSB0eXBlczogYXBwbGljYXRpb24vcGRmLCBhcHBsaWNhdGlvbi92bmQub3BlbnhtbGZvcm1hdHMtb2ZmaWNlZG9jdW1lbnQuc3ByZWFkc2hlZXRtbC5zaGVldDwvZm9ybWF0PgogIDwvZm9ybWF0cz4KICA8dmVyc2lvbj4xPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvIj5DQyBCWSA0LjA8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGlzIGlzIGRhdGFzZXQgaXMgcHVibGlzaGVkIGFzIHBhcnQgb2YgdGhlICdEYXRhLWRyaXZlbiBBbmFseXNpcyBvZiBBaXJwb3J0IFNlY3VyaXR5IENoZWNrcG9pbnQgT3BlcmF0aW9ucycgcGFwZXIgcHVibGlzaGVkIGluIHRoZSBBZXJvc3BhY2Ugam91cm5hbC48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+      "url": "https://data.4tu.nl/articles/_/12697205/1",
+      "contentUrl": null,
+      "metadataVersion": 7,
+      "schemaVersion": "http://datacite.org/schema/kernel-4",
+      "source": "mds",
+      "isActive": true,
+      "state": "findable",
+      "reason": null,
+      "viewCount": 5,
+      "viewsOverTime": [
+        {
+          "yearMonth": "2025-03",
+          "total": 1
+        },
+        {
+          "yearMonth": "2025-03",
+          "total": 1
+        },
+        {
+          "yearMonth": "2025-04",
+          "total": 1
+        },
+        {
+          "yearMonth": "2025-04",
+          "total": 1
+        },
+        {
+          "yearMonth": "2025-10",
+          "total": 1
+        }
+      ],
+      "downloadCount": 5,
+      "downloadsOverTime": [
+        {
+          "yearMonth": "2025-03",
+          "total": 1
+        },
+        {
+          "yearMonth": "2025-03",
+          "total": 1
+        },
+        {
+          "yearMonth": "2025-04",
+          "total": 1
+        },
+        {
+          "yearMonth": "2025-04",
+          "total": 1
+        },
+        {
+          "yearMonth": "2025-10",
+          "total": 1
+        }
+      ],
+      "referenceCount": 1,
+      "citationCount": 1,
+      "citationsOverTime": [
+        {
+          "year": "2024",
+          "total": 1
+        }
+      ],
+      "partCount": 0,
+      "partOfCount": 0,
+      "versionCount": 0,
+      "versionOfCount": 0,
+      "created": "2020-05-26T13:28:41Z",
+      "registered": "2020-05-26T13:28:42Z",
+      "published": "2020",
+      "updated": "2025-05-01T05:55:51Z"
+    },
+    "relationships": {
+      "client": {
+        "data": {
+          "id": "delft.data4tu",
+          "type": "clients"
+        }
+      },
+      "provider": {
+        "data": {
+          "id": "scpr",
+          "type": "providers"
+        }
+      },
+      "media": {
+        "data": {
+          "id": "10.4121/uuid:6246e6a6-d149-420f-a6a4-7afd08f154b5",
+          "type": "media"
+        }
+      },
+      "references": {
+        "data": [
+          {
+            "id": "10.3390/aerospace7060069",
+            "type": "dois"
+          }
+        ]
+      },
+      "citations": {
+        "data": [
+          {
+            "id": "10.3390/aerospace7060069",
+            "type": "dois"
+          }
+        ]
+      },
+      "parts": {
+        "data": []
+      },
+      "partOf": {
+        "data": []
+      },
+      "versions": {
+        "data": []
+      },
+      "versionOf": {
+        "data": []
+      }
+    }
+  }
+}

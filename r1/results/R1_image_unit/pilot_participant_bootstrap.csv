@@ -1,0 +1,9 @@
+condition,resampling_unit,bootstrap_replicates,comparison_capacity,maximum_reading_allowance,mean_target_miss_limit,metric,observed_value,bootstrap_2_5,bootstrap_median,bootstrap_97_5,interpretation
+false_miss,Whole participant profiles,2000,25,11,0.001,stopping lower bound,1.0,1.0,1.0,1.0,Participant-margin stability range; response-pair dependence remains separately optimized
+false_miss,Whole participant profiles,2000,25,11,0.001,full fixed-count lower bound,0.9,0.7000000000000001,0.9,1.0,Participant-margin stability range; response-pair dependence remains separately optimized
+false_miss,Whole participant profiles,2000,25,11,0.001,paired effect lower bound,0.0,0.0,0.0,0.0,Participant-margin stability range; response-pair dependence remains separately optimized
+false_miss,Whole participant profiles,2000,25,11,0.001,paired effect upper bound,0.1,0.0,0.1,0.3,Participant-margin stability range; response-pair dependence remains separately optimized
+false_alarm,Whole participant profiles,2000,24,7,0.001,stopping lower bound,1.0,1.0,1.0,1.0,Participant-margin stability range; response-pair dependence remains separately optimized
+false_alarm,Whole participant profiles,2000,24,7,0.001,full fixed-count lower bound,0.6000000000000001,0.4,0.7,0.9000000000000001,Participant-margin stability range; response-pair dependence remains separately optimized
+false_alarm,Whole participant profiles,2000,24,7,0.001,paired effect lower bound,0.1,0.0,0.1,0.30000000000000004,Participant-margin stability range; response-pair dependence remains separately optimized
+false_alarm,Whole participant profiles,2000,24,7,0.001,paired effect upper bound,0.4,0.1,0.30000000000000004,0.6000000000000001,Participant-margin stability range; response-pair dependence remains separately optimized

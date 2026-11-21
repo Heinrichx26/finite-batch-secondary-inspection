@@ -1,0 +1,10 @@
+condition,search_capacity,reading_limit,order,success_lower,mean_unreferred_upper
+false_miss,24,11,uniform,0.975,0.0027777777777777775
+false_miss,24,11,difficult_first,0.9666666666666666,0.0037037037037037034
+false_miss,24,11,easy_first,1.0,0.0
+false_miss,25,11,uniform,1.0,0.0
+false_miss,25,11,difficult_first,1.0,0.0
+false_miss,25,11,easy_first,1.0,0.0
+false_alarm,24,7,uniform,1.0,0.0
+false_alarm,24,7,difficult_first,1.0,0.0
+false_alarm,24,7,easy_first,1.0,0.0

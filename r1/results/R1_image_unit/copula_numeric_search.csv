@@ -1,0 +1,11 @@
+condition,search_capacity,common_maximum_readings,mean_target_miss_requirement,stopping_mean_miss_upper_at_capacity,dependence_family,parameter_lower,parameter_upper,dense_grid_points,bounded_refinement_starts,numerical_minimum_stop_minus_fixed,minimum_parameter,numerical_maximum_stop_minus_fixed,maximum_parameter,search_classification
+false_miss,25,11,0.001,0.0,Frank,-20.0,20.0,40001,40,0.0006913888488412068,-20.0,0.048933289745239694,4.145637516610057,Numerically searched extrema; no analytic global certificate
+false_miss,25,11,0.001,0.0,Clayton,0.0,10.0,40001,40,0.040000000000000036,0.0,0.05192747477356524,2.227743199391596,Numerically searched extrema; no analytic global certificate
+false_miss,25,11,0.001,0.0,Clayton 90 degree,0.0,10.0,40001,40,0.003000300353988572,10.0,0.040000000000000036,0.0,Numerically searched extrema; no analytic global certificate
+false_miss,25,11,0.001,0.0,Clayton 180 degree,0.0,10.0,40001,40,0.0066965401402704905,10.0,0.040929588051153765,0.17194721416980346,Numerically searched extrema; no analytic global certificate
+false_miss,25,11,0.001,0.0,Clayton 270 degree,0.0,10.0,40001,40,1.607037142248302e-07,10.0,0.040000000000000036,0.0,Numerically searched extrema; no analytic global certificate
+false_alarm,24,7,0.001,0.0,Frank,-20.0,20.0,40001,40,0.12899230168543768,20.0,0.2976616079251353,-20.0,Numerically searched extrema; no analytic global certificate
+false_alarm,24,7,0.001,0.0,Clayton,0.0,10.0,40001,40,0.12825418587364906,10.0,0.18000000000000005,0.0,Numerically searched extrema; no analytic global certificate
+false_alarm,24,7,0.001,0.0,Clayton 90 degree,0.0,10.0,40001,40,0.18000000000000005,0.0,0.303596136804567,9.695070673862197,Numerically searched extrema; no analytic global certificate
+false_alarm,24,7,0.001,0.0,Clayton 180 degree,0.0,10.0,40001,40,0.1269487765886167,10.0,0.18000000000000005,0.0,Numerically searched extrema; no analytic global certificate
+false_alarm,24,7,0.001,0.0,Clayton 270 degree,0.0,10.0,40001,40,0.18000000000000005,0.0,0.28629578394503424,10.0,Numerically searched extrema; no analytic global certificate

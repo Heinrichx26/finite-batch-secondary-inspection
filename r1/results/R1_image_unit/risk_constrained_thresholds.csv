@@ -1,0 +1,7 @@
+condition,mean_miss_limit,joint_referral_and_capacity_requirement,stopping_minimum_capacity,risk_constrained_best_fixed_minimum_capacity
+false_miss,0.001,0.5,25,23
+false_miss,0.001,0.8,25,24
+false_miss,0.001,0.9,25,25
+false_alarm,0.001,0.5,24,24
+false_alarm,0.001,0.8,24,24
+false_alarm,0.001,0.9,24,24

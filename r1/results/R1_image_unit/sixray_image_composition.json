@@ -1,0 +1,11 @@
+{
+  "annotated_boxes": 17657,
+  "unique_positive_images": 8908,
+  "images_with_multiple_boxes": 4686,
+  "images_with_multiple_annotated_classes": 2717,
+  "positive_images_with_gun_or_knife": 4071,
+  "gun_or_knife_images_with_multiple_target_boxes": 2184,
+  "gun_or_knife_images_with_both_classes": 1024,
+  "gun_or_knife_images_with_other_classes": 1116,
+  "data_role": "Descriptive annotation-positive image composition; not baggage prevalence or human-response data"
+}

@@ -1,0 +1,40 @@
+- user_identifier
+Randomly assigned ID for a participant. 
+
+- type_of_tv
+The type of AI error that the participant encountered in the Trust Violation phase
+False Alarm: There are no illicit objects in the baggage, but the AI indicated there is an illicit object.
+False Miss: There is an illicit object in the baggage, but the AI indicated there are no illicit objects.
+
+- type_of_responsive
+The strategy of conveying XAI to participants.
+R0: Non-responsive-all
+R1: Responsive-all
+R2: Non-responisve-difficult
+
+- type_of_vis
+The representation of XAI (saliency map or similar instances)
+
+- s1_postSurvey_benefit_perception
+The participant's self-reported score for 'Please indicate how beneficial you perceive it is to use the AI for completing the task well'.
+
+- s1_postSurvey_risk_perception
+The participant's self-reported score for 'Please indicate how risky you perceive it is to use the AI for completing the task well'.
+
+- s1_postSurvey_explanation_help_judge
+The participant's self-reported score for 'The explanation of the AI help me judge when I should trust and not trust the AI'.
+
+- s1_postSurvey_explanation_help_understand
+The participant's self-reported score for 'The explanation of the AI help me understand how the illicit objects detection is made'.
+
+- s1_postSurvey_predict_behave
+The participant's self-reported score for 'I can predict how the AI will behave'.
+
+- s1_postSurvey_quick_familiar
+The participant's self-reported score for 'I quickly became familiar with the AI'.
+
+- s1_postSurvey_understand_task
+The participant's self-reported score for 'I understand the AI for illicit objects detection'.
+
+
+

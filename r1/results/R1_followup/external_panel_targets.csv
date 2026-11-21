@@ -1,0 +1,3 @@
+condition,images_per_participant,participants,min_target_images,max_target_images,target_judgments,correct_target_judgments,all_correct_profiles,standardized_target_count,standardized_all_correct_probability
+falselyAlarm,24,115,3,10,755,722,87,3,0.8783747412008281
+falselyMiss,24,117,3,9,780,757,97,3,0.9172975172975173

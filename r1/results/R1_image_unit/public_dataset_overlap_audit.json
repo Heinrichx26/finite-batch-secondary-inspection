@@ -1,0 +1,17 @@
+{
+  "participant_counts": {
+    "behavior_NRA_group.csv": 121,
+    "behavior_RA_group.csv": 71,
+    "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": 232
+  },
+  "pairwise_overlap_counts": {
+    "NRA_with_complete": 81,
+    "RA_with_complete": 71,
+    "NRA_with_RA": 0
+  },
+  "union_across_three_behavior_csvs": 272,
+  "complete_232_sample_is_one_unique_participant_file": true,
+  "pilot_participants": 60,
+  "pilot_identifiers_overlap_behavior_csvs": false,
+  "pooled_participant_claim_permitted": false
+}

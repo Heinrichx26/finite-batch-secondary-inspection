@@ -1,0 +1,7 @@
+condition,referral_and_capacity_target,stop_capacity,stop_lower,stop_best_fixed_at_same_capacity,fixed_capacity,fixed_best_readings,required_conditional_capability_at_stop_capacity
+false_miss,0.5,21,0.8555555555555556,0.8,21,0,0.5844155844155844
+false_miss,0.8,21,0.8555555555555556,0.8,21,0,0.935064935064935
+false_miss,0.9,22,0.9,0.8257575757575759,25,5,1.0
+false_alarm,0.5,24,1.0,1.0,24,0,0.5
+false_alarm,0.8,24,1.0,1.0,24,0,0.8
+false_alarm,0.9,24,1.0,1.0,24,0,0.9

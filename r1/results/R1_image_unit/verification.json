@@ -1,0 +1,184 @@
+{
+  "status": "completed",
+  "source_sha256": {
+    "pilotResult_combinedAIandNoAI.xlsx": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f",
+    "task_selected_for_study.csv": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+    "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+    "SIXRay_annotations_positive_all.csv": "690df9f4af625146751fd6b9e848bdd9028e5816adb90471ad10a05da1297311"
+  },
+  "pilot_conditions": {
+    "false_miss": {
+      "unique_images": 27,
+      "gun_or_knife_images": 9,
+      "eligible_images_by_first_reader": [
+        6,
+        6,
+        6,
+        7,
+        7,
+        7,
+        9,
+        7,
+        8,
+        11
+      ],
+      "first_stage_routes_by_first_reader": [
+        {
+          "U": 6,
+          "B": 21
+        },
+        {
+          "U": 6,
+          "B": 21
+        },
+        {
+          "U": 6,
+          "B": 21
+        },
+        {
+          "U": 7,
+          "B": 20
+        },
+        {
+          "U": 7,
+          "B": 20
+        },
+        {
+          "B": 20,
+          "U": 7
+        },
+        {
+          "U": 9,
+          "B": 18
+        },
+        {
+          "U": 7,
+          "B": 20
+        },
+        {
+          "U": 8,
+          "B": 19
+        },
+        {
+          "U": 11,
+          "B": 16
+        }
+      ]
+    },
+    "false_alarm": {
+      "unique_images": 27,
+      "gun_or_knife_images": 6,
+      "eligible_images_by_first_reader": [
+        5,
+        5,
+        3,
+        7,
+        6,
+        5,
+        3,
+        7,
+        5,
+        5
+      ],
+      "first_stage_routes_by_first_reader": [
+        {
+          "B": 21,
+          "U": 5,
+          "K": 1
+        },
+        {
+          "U": 5,
+          "B": 22
+        },
+        {
+          "B": 24,
+          "U": 3
+        },
+        {
+          "U": 7,
+          "B": 19,
+          "K": 1
+        },
+        {
+          "U": 6,
+          "B": 20,
+          "K": 1
+        },
+        {
+          "B": 22,
+          "U": 5
+        },
+        {
+          "B": 24,
+          "U": 3
+        },
+        {
+          "U": 7,
+          "B": 19,
+          "K": 1
+        },
+        {
+          "U": 5,
+          "B": 20,
+          "K": 2
+        },
+        {
+          "U": 5,
+          "B": 21,
+          "K": 1
+        }
+      ]
+    }
+  },
+  "new_public_participant_sample": {
+    "participants": 232,
+    "images": 42,
+    "trials": 9048,
+    "trials_per_participant": 39,
+    "behavioral_outcome": "Task correctness and truth-label request only",
+    "policy_capacity_role": "Independent descriptive support; no referral-policy pooling"
+  },
+  "SIXray": {
+    "annotated_boxes": 17657,
+    "unique_positive_images": 8908,
+    "images_with_multiple_boxes": 4686,
+    "images_with_multiple_annotated_classes": 2717,
+    "positive_images_with_gun_or_knife": 4071,
+    "gun_or_knife_images_with_multiple_target_boxes": 2184,
+    "gun_or_knife_images_with_both_classes": 1024,
+    "gun_or_knife_images_with_other_classes": 1116,
+    "data_role": "Descriptive annotation-positive image composition; not baggage prevalence or human-response data"
+  },
+  "resampling": {
+    "replicates": 2000,
+    "unit": "Whole participants resampled within recorded response and visualization groups",
+    "order_or_pairing_guarantee": "Not inferred from bootstrap quantiles"
+  },
+  "independent_kernel_checks": {
+    "false_miss": {
+      "method": "Every selected subset; stop success enumerates retained-referral subsets",
+      "conditional_kernel_checks": 5880,
+      "largest_fixed_error": 2.6645352591003757e-15,
+      "largest_stopping_error": 2.6645352591003757e-15,
+      "passed": true
+    },
+    "false_alarm": {
+      "method": "Every selected subset; stop success enumerates retained-referral subsets",
+      "conditional_kernel_checks": 2440,
+      "largest_fixed_error": 4.440892098500626e-16,
+      "largest_stopping_error": 4.440892098500626e-16,
+      "passed": true
+    }
+  },
+  "sequence_resource_checks": {
+    "exhaustive_sequence_cases": 749,
+    "largest_mean_reading_error": 8.881784197001252e-16,
+    "largest_mean_search_error": 8.881784197001252e-16,
+    "passed": true
+  },
+  "numerical_search": {
+    "copula_parameter_grid_points_per_family": 40001,
+    "bounded_refinement_intervals_per_family": 40,
+    "global_certificate": false
+  }
+}

@@ -1,0 +1,736 @@
+{
+  "status": "completed",
+  "source_verification": "verification.json",
+  "participants_resampled": 2000,
+  "pilot_leave_one_image_out_cases": 162,
+  "mean_target_miss_design_limit": 0.001,
+  "joint_resource_thresholds": [
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "joint_referral_and_capacity_requirement": 0.5,
+      "stopping_minimum_capacity": 25,
+      "risk_constrained_best_fixed_minimum_capacity": 23
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "joint_referral_and_capacity_requirement": 0.8,
+      "stopping_minimum_capacity": 25,
+      "risk_constrained_best_fixed_minimum_capacity": 24
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "joint_referral_and_capacity_requirement": 0.9,
+      "stopping_minimum_capacity": 25,
+      "risk_constrained_best_fixed_minimum_capacity": 25
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "joint_referral_and_capacity_requirement": 0.5,
+      "stopping_minimum_capacity": 24,
+      "risk_constrained_best_fixed_minimum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "joint_referral_and_capacity_requirement": 0.8,
+      "stopping_minimum_capacity": 24,
+      "risk_constrained_best_fixed_minimum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "joint_referral_and_capacity_requirement": 0.9,
+      "stopping_minimum_capacity": 24,
+      "risk_constrained_best_fixed_minimum_capacity": 24
+    }
+  ],
+  "leave_one_image_out_threshold_ranges": [
+    {
+      "condition": "false_alarm",
+      "requirement": 0.5,
+      "policy": "stopping",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "requirement": 0.5,
+      "policy": "risk-constrained fixed",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "requirement": 0.8,
+      "policy": "stopping",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "requirement": 0.8,
+      "policy": "risk-constrained fixed",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "requirement": 0.9,
+      "policy": "stopping",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "requirement": 0.9,
+      "policy": "risk-constrained fixed",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.5,
+      "policy": "stopping",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 20,
+      "median_capacity": 20.0,
+      "maximum_capacity": 21
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.5,
+      "policy": "risk-constrained fixed",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 20,
+      "median_capacity": 20.0,
+      "maximum_capacity": 21
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.8,
+      "policy": "stopping",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 20,
+      "median_capacity": 20.0,
+      "maximum_capacity": 21
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.8,
+      "policy": "risk-constrained fixed",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 20,
+      "median_capacity": 20.0,
+      "maximum_capacity": 21
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.9,
+      "policy": "stopping",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 21,
+      "median_capacity": 21.0,
+      "maximum_capacity": 22
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.9,
+      "policy": "risk-constrained fixed",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 21,
+      "median_capacity": 24.0,
+      "maximum_capacity": 25
+    },
+    {
+      "condition": "false_alarm",
+      "requirement": 0.5,
+      "policy": "fixed, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "requirement": 0.5,
+      "policy": "stopping, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "requirement": 0.8,
+      "policy": "fixed, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "requirement": 0.8,
+      "policy": "stopping, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "requirement": 0.9,
+      "policy": "fixed, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "requirement": 0.9,
+      "policy": "stopping, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 23,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.5,
+      "policy": "fixed, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 21,
+      "median_capacity": 22.0,
+      "maximum_capacity": 23
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.5,
+      "policy": "stopping, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 21,
+      "median_capacity": 24.0,
+      "maximum_capacity": 25
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.8,
+      "policy": "fixed, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 21,
+      "median_capacity": 23.0,
+      "maximum_capacity": 24
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.8,
+      "policy": "stopping, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 21,
+      "median_capacity": 24.0,
+      "maximum_capacity": 25
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.9,
+      "policy": "fixed, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 21,
+      "median_capacity": 24.0,
+      "maximum_capacity": 25
+    },
+    {
+      "condition": "false_miss",
+      "requirement": 0.9,
+      "policy": "stopping, with the mean-miss limit",
+      "finite_image_deletions": 27,
+      "minimum_capacity": 21,
+      "median_capacity": 24.0,
+      "maximum_capacity": 25
+    }
+  ],
+  "additional_public_sample": {
+    "participants": 232,
+    "behavioral_outcomes": [
+      "task correctness",
+      "truth-label request"
+    ],
+    "not_used_for": [
+      "secondary-referral response",
+      "physical search detection",
+      "service completion"
+    ],
+    "bootstrap_unit": "Whole participants, stratified by response and visualization"
+  },
+  "pilot_task_time": {
+    "complete_trials": 1080,
+    "condition_groups": 4,
+    "bootstrap_replicates": 2000,
+    "scope": "Elapsed time for each online image task"
+  },
+  "random_order_sensitivity": [
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.0,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.0,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.001,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.001,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.01,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.01,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.05,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.05,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.1,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.1,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 1.0,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    },
+    {
+      "condition": "false_alarm",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 1.0,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.0,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.0,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.001,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.001,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.01,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.01,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.05,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.05,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.1,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 0.1,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 1.0,
+      "rule": "stopping",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 25
+    },
+    {
+      "condition": "false_miss",
+      "mean_miss_limit": 0.001,
+      "uniform_permutation_total_variation_radius": 1.0,
+      "rule": "fixed at the same maximum reading allowance",
+      "joint_referral_and_capacity_requirement": 0.8,
+      "minimum_search_capacity": 24
+    }
+  ],
+  "target_omission_sensitivity_at_minimum_capacity": [
+    {
+      "condition": "false_miss",
+      "search_capacity": 24,
+      "maximum_reading_allowance": 11,
+      "batch_level_target_omission_allowance": 0.0,
+      "stopping_success_lower": 0.9750000000000001,
+      "stopping_mean_miss_upper": 0.002777777777777778,
+      "stopping_jointly_feasible": false,
+      "same_reading_allowance_fixed_success_lower": 0.8,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_miss",
+      "search_capacity": 25,
+      "maximum_reading_allowance": 11,
+      "batch_level_target_omission_allowance": 0.0,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 0.9,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_miss",
+      "search_capacity": 26,
+      "maximum_reading_allowance": 11,
+      "batch_level_target_omission_allowance": 0.0,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 1.0,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_miss",
+      "search_capacity": 27,
+      "maximum_reading_allowance": 11,
+      "batch_level_target_omission_allowance": 0.0,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 1.0,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 24,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.0,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 0.6000000000000001,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": false
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 24,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.05,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 0.6000000000000001,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": false
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 24,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.1,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 0.6000000000000001,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": false
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 24,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.2,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 0.6000000000000001,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": false
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 25,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.0,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 0.9,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 25,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.05,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 0.9,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 25,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.1,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 0.9,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 25,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.2,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 0.9,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 26,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.0,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 1.0,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 26,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.05,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 1.0,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 26,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.1,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 1.0,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 26,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.2,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 1.0,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 27,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.0,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 1.0,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 27,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.05,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 1.0,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 27,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.1,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 1.0,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    },
+    {
+      "condition": "false_alarm",
+      "search_capacity": 27,
+      "maximum_reading_allowance": 7,
+      "batch_level_target_omission_allowance": 0.2,
+      "stopping_success_lower": 1.0,
+      "stopping_mean_miss_upper": 0.0,
+      "stopping_jointly_feasible": true,
+      "same_reading_allowance_fixed_success_lower": 1.0,
+      "same_reading_allowance_fixed_mean_miss_upper": 0.0,
+      "same_reading_allowance_fixed_jointly_feasible": true
+    }
+  ],
+  "deliverables": [
+    "risk_constrained_capacity.csv",
+    "risk_constrained_thresholds.csv",
+    "leave_one_image_out.csv",
+    "leave_one_image_out_risk_constrained.csv",
+    "external_behavior_strata.csv",
+    "pilot_task_time.csv",
+    "target_omission_sensitivity.csv",
+    "random_order_sensitivity.csv",
+    "random_order_thresholds.csv"
+  ],
+  "interpretation": "The ranges show how the capacity requirements vary when each image is removed in turn."
+}

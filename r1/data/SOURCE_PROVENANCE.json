@@ -1,0 +1,54 @@
+{
+  "title": "Impact of EXplainable AI on Trust Evolution with AI Error Severity: Comparing Similar Instances and Saliency Map in a Baggage Screening Task",
+  "doi": "10.6084/m9.figshare.30316936.v2",
+  "version": 2,
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "input_files": {
+    "behavior_NRA_group.csv": {
+      "sha256": "6f065c46f5c7e67973895e1931693dde3018db895a645a3b77516f8b73133d36",
+      "figshare_file_id": 58596682,
+      "figshare_download_url": "https://ndownloader.figshare.com/files/58596682"
+    },
+    "behavior_RA_group.csv": {
+      "sha256": "b4e9a8b4189ba6eb854e5b674e6801ff40b4c6fbdebd2b3b47b1aea99e6323b3",
+      "figshare_file_id": 58596685,
+      "figshare_download_url": "https://ndownloader.figshare.com/files/58596685"
+    },
+    "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": {
+      "sha256": "dc7ed2d719f085232bc251826498b3e1bfcaaa0d105c5d21759437582b87fa66",
+      "figshare_file_id": 58596688,
+      "figshare_download_url": "https://ndownloader.figshare.com/files/58596688"
+    },
+    "pilotResult_combinedAIandNoAI.xlsx": {
+      "sha256": "1cdc4da9d26c51cde53310e24d85047483a7faf8b77e64b71461eac33bf9066f",
+      "figshare_file_id": 58596760,
+      "figshare_download_url": "https://ndownloader.figshare.com/files/58596760"
+    },
+    "task_selected_for_study.csv": {
+      "sha256": "8e9193777b041feed6643b2b0b25f591a5efcfb2b4477b01dc5634227f50e204",
+      "figshare_file_id": 58596805,
+      "figshare_download_url": "https://ndownloader.figshare.com/files/58596805"
+    },
+    "SIXRay_annotations_positive_all.csv": {
+      "sha256": "690df9f4af625146751fd6b9e848bdd9028e5816adb90471ad10a05da1297311",
+      "figshare_file_id": 58596652,
+      "figshare_download_url": "https://ndownloader.figshare.com/files/58596652"
+    }
+  },
+  "annotation_use": "The archive distributes the licensed annotation table.",
+  "checkpoint_data": {
+    "title": "Airport Security Checkpoint Data",
+    "doi": "10.4121/uuid:6246e6a6-d149-420f-a6a4-7afd08f154b5",
+    "version": 1,
+    "license": "CC BY 4.0",
+    "input_sha256": {
+      "security_checkpoint_data.xlsx": "ab3cccb15b8487fbad67d1883e853891754bacc5a53a39feb4864dcb5c6ae9af",
+      "README.pdf": "b23c753fe410ee3cdd937d6328810a0795676e40659763bf4739f2eae4acaf63",
+      "datacite.json": "4505600cb9840d1bb69ae5465f072dbe3c1802d4ca0547d7e9970272e756ac2d"
+    }
+  }
+}

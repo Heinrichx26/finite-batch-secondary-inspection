@@ -1,0 +1,5 @@
+condition,machine_errors,participants,images,shared_images,target_images,mandatory_min,mandatory_max,profiles_with_optional_target,optional_target_images
+False Alarm,1,10,25,1,8,17,24,0,0
+False Alarm,3,10,27,1,6,20,24,0,0
+False Miss,1,10,25,1,6,17,23,0,0
+False Miss,3,10,27,1,9,16,21,2,1

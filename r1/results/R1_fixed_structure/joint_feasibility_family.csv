@@ -1,0 +1,5 @@
+N,m,z,n,response_weight_no_empty_referrals_exact,reliability_target_exact,reliability_target,miss_limit_exact,miss_limit,joint_success_exact,joint_success,mean_target_miss_exact,mean_target_miss,meets_reliability,meets_mean_risk,jointly_feasible
+2000,1,1998,1997,999/1000,999/1000,0.999,1/1000,0.001,1997/2000,0.9985,3/2000,0.0015,False,False,False
+2000,1,1998,1998,999/1000,999/1000,0.999,1/1000,0.001,999/1000,0.999,1/1000,0.001,True,True,True
+2000,1,1998,1999,999/1000,999/1000,0.999,1/1000,0.001,1997001/2000000,0.9985005,1/2000,0.0005,False,True,False
+2000,1,1998,2000,999/1000,999/1000,0.999,1/1000,0.001,999/1000,0.999,0,0.0,True,True,True

@@ -1,0 +1,43 @@
+filename,ground truth,model result,difficulty level,P or N
+N0345702,None,None,D,N
+N0335025,None,None,D,N
+N0340692,None,None,D,N
+N0345412,None,None,D,N
+N0360332,None,None,D,N
+N0335886,None,None,D,N
+N0323077,None,None,E,N
+N0327113,None,None,E,N
+N0332137,None,None,E,N
+N0351530,None,None,E,N
+N0360259,None,None,E,N
+N0333882,None,None,E,N
+P02544,"Gun, Knife","Gun, Knife",E,P
+P01320,Gun,Gun,E,P
+P01356,Gun,Gun,E,P
+P00261,Knife,Knife,E,P
+P04110,Pliers,Pliers,E,P
+P05100,Scissors,Scissors,E,P
+P04823,Scissors,Scissors,E,P
+P07854,Wrench,Wrench,E,P
+P05002,Pliers,Pliers,E,P
+P02517,Gun,Gun,E,P
+P06093,Wrench,Wrench,E,P
+P07867,Wrench,Wrench,E,P
+P03250,"Gun, Knife, Wrench","Gun, Knife, Wrench",D,P
+P01074,Gun,Gun,D,P
+P01341,Gun,Gun,D,P
+P00216,Knife,Knife,D,P
+P04556,Scissors,Scissors,D,P
+P06172,Pliers,Pliers,D,P
+P04572,Scissors,Scissors,D,P
+P06614,Pliers,Pliers,D,P
+P00485,"Knife, Wrench","Knife, Wrench",D,P
+P06019,"Pliers, Wrench","Pliers, Wrench",D,P
+P06221,"Pliers, Wrench","Pliers, Wrench",D,P
+P03830,Wrench,Wrench,D,P
+N_P00285,Knife,None,E,P
+N_P03785,Wrench,None,E,P
+N_P06218,Scissors,None,E,P
+P_N0330416,None,Wrench,E,N
+P_N0334396,None,Gun,E,N
+P_N0353425,None,Scissors,E,N

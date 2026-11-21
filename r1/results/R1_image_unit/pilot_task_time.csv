@@ -1,0 +1,5 @@
+assistance_condition,AI_error_condition,participants,image_judgments,unique_images,task_time_unit,pooled_task_time_median,mean_of_participant_median_task_times,participant_median_minimum,participant_median_maximum,bootstrap_2_5,bootstrap_median,bootstrap_97_5,bootstrap_replicates,bootstrap_unit,scope
+AI-assisted,False Alarm,10,270,27,Seconds,19.222,19.7211,14.772,23.958,18.2035075,19.7241,21.158455,2000,Whole participants within the four recorded conditions,Elapsed time for each online image task
+AI-assisted,False Miss,10,270,27,Seconds,16.664,15.8853,5.372,20.609,12.853415000000002,15.9387,18.5126775,2000,Whole participants within the four recorded conditions,Elapsed time for each online image task
+Unaided,False Alarm,10,270,27,Seconds,13.5075,14.613900000000001,7.882,30.677,11.534849999999999,14.47485,18.7187575,2000,Whole participants within the four recorded conditions,Elapsed time for each online image task
+Unaided,False Miss,10,270,27,Seconds,13.93,14.179300000000001,11.169,20.301,12.4914575,14.1491,16.1334225,2000,Whole participants within the four recorded conditions,Elapsed time for each online image task

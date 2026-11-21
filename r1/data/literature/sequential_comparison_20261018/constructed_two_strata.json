@@ -1,0 +1,36 @@
+{
+  "full": {
+    "worlds": [
+      {
+        "groups": [[2, 0, 0, 2], [0, 0, 1, 3]],
+        "targets": 2
+      },
+      {
+        "groups": [[0, 0, 1, 3], [2, 0, 0, 2]],
+        "targets": 2
+      }
+    ],
+    "read_limit": 6,
+    "search_limit": 2,
+    "resource_sensitivity": [[5, 2], [6, 3], [7, 2]],
+    "prior_denominator": 10,
+    "training_prior_numerators": [1, 5, 9],
+    "actual_prior_numerators": [1, 3, 5, 7, 9]
+  },
+  "smoke": {
+    "worlds": [
+      {
+        "groups": [[1, 0, 0, 1], [0, 0, 1, 1]],
+        "targets": 1
+      },
+      {
+        "groups": [[0, 0, 1, 1], [1, 0, 0, 1]],
+        "targets": 1
+      }
+    ],
+    "read_limit": 3,
+    "search_limit": 1,
+    "prior_numerator": 1,
+    "prior_denominator": 2
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "script_sha256": "331482a6686b25645dc0503d81836d84acfca7cc7a2b72a902bacc4796749d10",
+  "sessions": 13,
+  "timing_rows": 168,
+  "duplicates": 1,
+  "incomplete": 5,
+  "invalid_clock": 1,
+  "usable_intervals": 161,
+  "mean_seconds": 59.46583850931677,
+  "median_seconds": 42.0,
+  "p90_seconds": 134.0,
+  "p95_seconds": 184.0,
+  "field_input_sha256": "ab3cccb15b8487fbad67d1883e853891754bacc5a53a39feb4864dcb5c6ae9af",
+  "linked_elapsed_times": {
+    "intervals": 159,
+    "medians_seconds": {
+      "before_search": 60.0,
+      "search": 42.0,
+      "dropoff_end_to_search_end": 119.0
+    },
+    "within_180_seconds_from_dropoff_end": 133,
+    "within_180_seconds_of_search": 149
+  }
+}

@@ -1,5 +1,10 @@
 # Finite-batch secondary inspection
 
+The [reproducibility files for the revised article](r1/README.md) include
+the image-level comparisons, checkpoint service calculations, and conditional
+physical-detection requirements. The same files and checksums are available as
+`Reproducibility_Materials.zip` in [Release v1.1.0](https://github.com/Heinrichx26/finite-batch-secondary-inspection/releases/tag/v1.1.0).
+
 Analysis code for **Finite-batch reliability of secondary inspection under limited
 search capacity: Sequential policies and resource requirements**.
 

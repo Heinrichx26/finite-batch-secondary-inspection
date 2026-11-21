@@ -1,0 +1,12 @@
+condition,unique_images,target_images,maximum_reading_allowance,search_capacity,stopping_success_lower,stopping_mean_miss_upper,stopping_jointly_feasible,risk_constrained_best_fixed_success_lower,risk_constrained_best_fixed_readings,risk_constrained_best_fixed_mean_miss_upper,risk_constrained_fixed_feasible,same_reading_allowance_fixed_success_lower,same_reading_allowance_fixed_mean_miss_upper,same_reading_allowance_fixed_jointly_feasible,matched_stop_minus_fixed_effect_lower,matched_stop_minus_fixed_effect_upper
+false_miss,27,9,11,21,0.8555555555555556,0.016049382716049384,False,0.0,11,0.0,True,0.0,0.0,True,0.5000000000000001,0.8833333333333333
+false_miss,27,9,11,22,0.9,0.011111111111111112,False,0.30000000000000004,11,0.0,True,0.30000000000000004,0.0,True,0.4,0.7000000000000001
+false_miss,27,9,11,23,0.9375,0.006944444444444445,False,0.4999999999999999,11,0.0,True,0.4999999999999999,0.0,True,0.1375,0.5
+false_miss,27,9,11,24,0.9750000000000001,0.002777777777777778,False,0.7999999999999998,11,0.0,True,0.7999999999999998,0.0,True,0.07500000000000001,0.2
+false_miss,27,9,11,25,1.0,0.0,True,0.9,11,0.0,True,0.9,0.0,True,0.0,0.1
+false_miss,27,9,11,26,1.0,0.0,True,1.0,11,0.0,True,1.0,0.0,True,0.0,0.0
+false_miss,27,9,11,27,1.0,0.0,True,1.0,11,0.0,True,1.0,0.0,True,0.0,0.0
+false_alarm,27,6,7,24,1.0,0.0,True,1.0,0,0.0,True,0.6000000000000001,0.0,True,0.1,0.4
+false_alarm,27,6,7,25,1.0,0.0,True,1.0,0,0.0,True,0.9000000000000001,0.0,True,0.0,0.1
+false_alarm,27,6,7,26,1.0,0.0,True,1.0,0,0.0,True,1.0,0.0,True,0.0,0.0
+false_alarm,27,6,7,27,1.0,0.0,True,1.0,0,0.0,True,1.0,0.0,True,0.0,0.0

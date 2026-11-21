@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "matched_unique_image_conditions": [
+    "false_alarm",
+    "false_miss"
+  ],
+  "brute_force_stop_policy_checks": 20,
+  "transportation_bounds_checks": 2,
+  "complete_positive_pilot_task_times": 1080,
+  "claims": [
+    "Response-pair uncertainty is kept separate from participant resampling.",
+    "Physical detection and service completion have no pilot estimates.",
+    "The 232-person file measures task correctness and truth requests."
+  ]
+}

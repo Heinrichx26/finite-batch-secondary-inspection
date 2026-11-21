@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "independent_vote_and_graph_checks": 9,
+  "diagram_count_configurations": 3019,
+  "maximum_diagram_probability_error": 2.220446049250313e-16,
+  "panel_allocations": 370,
+  "panel_rows_verified": 4
+}

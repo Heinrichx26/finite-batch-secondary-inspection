@@ -1,0 +1,5 @@
+% Inkscape PDF export with a selectable-text vector drawing.
+\begingroup
+\ifx\svgwidth\undefined\def\svgwidth{\linewidth}\fi
+\includegraphics[width=\svgwidth]{figures/figure_01.pdf}
+\endgroup
