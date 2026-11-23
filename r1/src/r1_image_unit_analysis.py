@@ -671,6 +671,35 @@ def smoke_check(cases: dict) -> dict:
             for condition, profiles in route_counts.items()
         },
         "unique_image_conditions": pilot,
+        "participant_id_overlap": participant_overlap_audit(),
+    }
+
+
+def participant_overlap_audit() -> dict:
+    dataset_files = {
+        name: pd.read_csv(BASE / "data" / name, keep_default_na=False)
+        for name in ("behavior_NRA_group.csv", "behavior_RA_group.csv",
+                     "behavior_XAI_presented_beforeAndAfter_trustViolation.csv")
+    }
+    dataset_ids = {name: set(frame["userID"]) for name, frame in dataset_files.items()}
+    nra, ra, response_232 = [dataset_ids[name] for name in dataset_files]
+    pilot_ids = set(pd.read_excel(PRIMARY_FILE, keep_default_na=False)["user_identifier"])
+    policy_overlaps = {
+        name: len(pilot_ids & identifiers)
+        for name, identifiers in dataset_ids.items()
+    }
+    if len(pilot_ids) != 60 or len(response_232) != 232 or any(policy_overlaps.values()):
+        raise ValueError("The policy and 232-person response samples must have distinct participant IDs")
+    return {
+        "participant_counts": {name: len(ids) for name, ids in dataset_ids.items()},
+        "pairwise_overlap_counts": {
+            "NRA_with_232_person_file": len(nra & response_232),
+            "RA_with_232_person_file": len(ra & response_232),
+            "NRA_with_RA": len(nra & ra),
+        },
+        "union_across_three_behavior_csvs": len(nra | ra | response_232),
+        "policy_participant_overlap_counts": policy_overlaps,
+        "policy_sample_disjoint_from_232_person_file": not bool(pilot_ids & response_232),
     }
 
 
@@ -1071,27 +1100,7 @@ def write_full(cases: dict, bootstrap_replicates: int,
     class_summary.to_csv(OUT / "sixray_class_image_summary.csv", index=False)
     (OUT / "sixray_image_composition.json").write_text(
         json.dumps(composition, indent=2), encoding="utf-8")
-    dataset_files = {
-        name: pd.read_csv(BASE / "data" / name, keep_default_na=False)
-        for name in ("behavior_NRA_group.csv", "behavior_RA_group.csv",
-                     "behavior_XAI_presented_beforeAndAfter_trustViolation.csv")
-    }
-    dataset_ids = {name: set(frame["userID"]) for name, frame in dataset_files.items()}
-    nra, ra, complete = [dataset_ids[name] for name in dataset_files]
-    pilot_ids = set(pd.read_excel(PRIMARY_FILE, keep_default_na=False)["user_identifier"])
-    overlap_audit = {
-        "participant_counts": {name: len(ids) for name, ids in dataset_ids.items()},
-        "pairwise_overlap_counts": {
-            "NRA_with_complete": len(nra & complete),
-            "RA_with_complete": len(ra & complete),
-            "NRA_with_RA": len(nra & ra),
-        },
-        "union_across_three_behavior_csvs": len(nra | ra | complete),
-        "complete_232_sample_is_one_unique_participant_file": len(complete) == 232,
-        "pilot_participants": len(pilot_ids),
-        "pilot_identifiers_overlap_behavior_csvs": False,
-        "pooled_participant_claim_permitted": False,
-    }
+    overlap_audit = participant_overlap_audit()
     (OUT / "public_dataset_overlap_audit.json").write_text(
         json.dumps(overlap_audit, indent=2), encoding="utf-8")
     result = {
@@ -1116,7 +1125,8 @@ def write_full(cases: dict, bootstrap_replicates: int,
             "participants": 232, "images": 42, "trials": 9048,
             "trials_per_participant": 39,
             "behavioral_outcome": "Task correctness and truth-label request only",
-            "policy_capacity_role": "Independent descriptive support; no referral-policy pooling",
+            "participant_overlap_with_policy_sample": 0,
+            "policy_capacity_role": "Descriptive response evidence; policy capacities use the 20 schedule profiles",
         },
         "SIXray": composition,
         "resampling": {

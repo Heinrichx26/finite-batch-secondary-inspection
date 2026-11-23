@@ -138,5 +138,24 @@
       "primary_profiles": 10,
       "secondary_profiles": 10
     }
+  },
+  "participant_id_overlap": {
+    "participant_counts": {
+      "behavior_NRA_group.csv": 121,
+      "behavior_RA_group.csv": 71,
+      "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": 232
+    },
+    "pairwise_overlap_counts": {
+      "NRA_with_232_person_file": 81,
+      "RA_with_232_person_file": 71,
+      "NRA_with_RA": 0
+    },
+    "union_across_three_behavior_csvs": 272,
+    "policy_participant_overlap_counts": {
+      "behavior_NRA_group.csv": 0,
+      "behavior_RA_group.csv": 0,
+      "behavior_XAI_presented_beforeAndAfter_trustViolation.csv": 0
+    },
+    "policy_sample_disjoint_from_232_person_file": true
   }
 }

@@ -1,0 +1,11 @@
+mean_miss_limit,composition_outside_one_target_per_group,protect_single_target_in_either_group,worst_case_quota_referral_probability,worst_case_quota_mean_recovery,pooled_uniform_referral_probability,quota_strictly_improves_on_pooled,probability_of_one_search_per_group
+0.6,0,False,0.1666666667,0.4166666667,0.1,True,1
+0.6,0.1,False,0.15,0.4083333333,0.1,True,1
+0.6,0.2,False,0.1333333333,0.4,0.1,True,1
+0.6,0.21,False,0.1053333333,0.4,0.1,True,0.8
+0.6,0.22,False,0.104,0.4,0.1,True,0.8
+0.6,0.23,False,0.1026666667,0.4,0.1,True,0.8
+0.6,0.24,False,0.1013333333,0.4,0.1,True,0.8
+0.6,0.25,False,0.1,0.4,0.1,False,0.8
+0.6,0.4,False,0.1,0.4,0.1,False,0.6
+0.6,1,False,0.1,0.4,0.1,False,0.6

@@ -136,7 +136,8 @@
     "trials": 9048,
     "trials_per_participant": 39,
     "behavioral_outcome": "Task correctness and truth-label request only",
-    "policy_capacity_role": "Independent descriptive support; no referral-policy pooling"
+    "participant_overlap_with_policy_sample": 0,
+    "policy_capacity_role": "Descriptive response evidence; policy capacities use the 20 schedule profiles"
   },
   "SIXray": {
     "annotated_boxes": 17657,

@@ -1,0 +1,9 @@
+analysis,case,positive_referrals_by_group,target_compositions,search_slots,maximum_mean_target_recovery,minimum_feasible_mean_miss,feasible_at_empirical_0_001_limit
+quota recovery frontier across search capacities,composition_11,2;3,1/1,2,0.5,0.5,False
+quota recovery frontier across search capacities,all_compositions,2;3,2/0;1/1;0/2,2,0.4,0.6,False
+quota recovery frontier across search capacities,composition_11,2;3,1/1,3,0.6666666667,0.3333333333,False
+quota recovery frontier across search capacities,all_compositions,2;3,2/0;1/1;0/2,3,0.6,0.4,False
+quota recovery frontier across search capacities,composition_11,2;3,1/1,4,0.8333333333,0.1666666667,False
+quota recovery frontier across search capacities,all_compositions,2;3,2/0;1/1;0/2,4,0.8,0.2,False
+quota recovery frontier across search capacities,composition_11,2;3,1/1,5,1,0,True
+quota recovery frontier across search capacities,all_compositions,2;3,2/0;1/1;0/2,5,1,0,True

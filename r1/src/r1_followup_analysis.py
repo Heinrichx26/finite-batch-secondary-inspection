@@ -13,7 +13,6 @@ import pandas as pd
 from mpmath import iv
 from openpyxl import load_workbook
 from scipy.optimize import linprog
-from scipy.stats import beta, binom
 
 from compare_sequential_policies_20261018 import (
     Controller, initial_belief, load_case, normalize, remaining_by_group, terminal_value, transitions,
@@ -204,19 +203,35 @@ def image_difficulty(trial):
     return difficulty
 
 
+def expected_pooled_readings(population, positive_count, slots):
+    if positive_count < slots:
+        return Fraction(population)
+    return Fraction(slots * (population + 1), positive_count + 1)
+
+
+def required_detection_for_mean_risk(unreferred_fraction, missed_limit):
+    if unreferred_fraction > missed_limit:
+        return None
+    if unreferred_fraction == 1:
+        return 0.0
+    return (1 - missed_limit) / (1 - unreferred_fraction)
+
+
 def quota_analysis(case, difficulty):
     image_groups = difficulty.loc[case["image_ids"]].to_numpy()
+    total_targets = int(case["targets"].sum())
     data = []
     for primary in case["primary"]:
         eligible = primary["route"] == "U"
-        if (eligible & case["targets"]).sum() != 1:
+        optional_target = eligible & case["targets"]
+        if optional_target.sum() != 1:
             continue
         masks = [eligible & (image_groups == group) for group in ("difficult", "easy")]
         sizes = tuple(int(mask.sum()) for mask in masks)
         target_group = next(group for group, mask in enumerate(masks) if (mask & case["targets"]).any())
         loads = [tuple(int((mask & secondary["referral"]).sum()) for mask in masks)
                  for secondary in case["secondary"]]
-        assert all(load[target_group] > 0 for load in loads)
+        assert all((optional_target & secondary["referral"]).any() for secondary in case["secondary"])
         for capacity in (24, 25):
             mandatory = int((~eligible).sum())
             slots = capacity - mandatory
@@ -230,12 +245,31 @@ def quota_analysis(case, difficulty):
             assert np.isclose(sum(weights), 1.0)
             supported = [min(quota[target_group], load[target_group]) / load[target_group]
                          for load in loads for quota in quotas]
-            fixed_quotas = min(np.array(supported).reshape(len(loads), len(quotas)) @ weights)
-            pooled = min(min(slots, sum(load)) / sum(load) for load in loads)
+            quota_probabilities = np.array(supported).reshape(len(loads), len(quotas)) @ weights
+            pooled_probabilities = np.asarray([min(slots, sum(load)) / sum(load) for load in loads])
+            paired_effects = quota_probabilities - pooled_probabilities
+            fixed_quotas = min(quota_probabilities)
+            pooled = min(pooled_probabilities)
+            quota_unreferred = (1 - fixed_quotas) / total_targets
+            pooled_unreferred = (1 - pooled) / total_targets
+            first_pass_readings = sum(sizes)
+            extra_readings = [first_pass_readings - expected_pooled_readings(
+                first_pass_readings, sum(load), slots) for load in loads]
             data.append({"mandatory": mandatory, "difficult_images": sizes[0], "easy_images": sizes[1],
                          "search_capacity": capacity, "available_searches": slots,
+                         "optional_images_read_in_full_pass": first_pass_readings,
                          "placement_guarantee": guarantee, "quota_replay_lower": float(fixed_quotas),
-                         "pooled_replay_lower": pooled})
+                         "pooled_replay_lower": pooled,
+                         "paired_referral_effect_lower": float(min(paired_effects)),
+                         "paired_referral_effect_upper": float(max(paired_effects)),
+                         "first_pass_readings": first_pass_readings,
+                         "max_extra_readings_vs_pooled_stopping": float(max(extra_readings)),
+                         "quota_replay_upper_mean_unreferred_fraction": quota_unreferred,
+                         "pooled_replay_upper_mean_unreferred_fraction": pooled_unreferred,
+                         "quota_required_detection_for_mean_miss_limit_0_001":
+                             required_detection_for_mean_risk(quota_unreferred, 0.001),
+                         "pooled_required_detection_for_mean_miss_limit_0_001":
+                             required_detection_for_mean_risk(pooled_unreferred, 0.001)})
     assert len(data) == 4
     return data
 
@@ -527,7 +561,7 @@ def linked_check_times(start, finish, dropoff_times):
     return start - dropoff, finish - start, finish - dropoff
 
 
-def service_records():
+def service_records(*, group_linked_times=False):
     counts = Counter()
     intervals = defaultdict(set)
     workbook = load_workbook(FIELD_FILE, read_only=True, data_only=True)
@@ -567,12 +601,16 @@ def service_records():
     assert sum(counts[key] for key in ("incomplete", "invalid_clock", "nonpositive", "duplicates",
                                        "usable_intervals")) == counts["timing_rows"]
     sessions = defaultdict(list)
-    linked_times = []
+    linked_by_session = defaultdict(list)
     for (sheet, lane, start, finish), dropoffs in sorted(intervals.items()):
         sessions[sheet, lane].append(finish - start)
         linked = linked_check_times(start, finish, dropoffs)
         if linked is not None:
-            linked_times.append(linked)
+            linked_by_session[sheet, lane].append(linked)
+    linked_sessions = list(linked_by_session.values())
+    linked_times = linked_sessions if group_linked_times else [
+        times for session in linked_sessions for times in session
+    ]
     return counts, list(sessions.values()), linked_times
 
 
@@ -627,56 +665,37 @@ def service_analysis():
              for seconds, count in sorted(Counter(durations).items())])
 
 
-def minimum_validation_batches(requirement, alpha, failures):
-    if not 0 < requirement < 1:
-        raise ValueError("A finite binomial validation sample requires a probability strictly between 0 and 1")
-    trials = failures + 1
-    while beta.ppf(alpha, trials - failures, failures + 1) < requirement:
-        trials += 1
-    return trials
-
-
-def conditional_detection_requirements():
+def conditional_detection_requirements(capacity, reading_allowance, target_count, referral_bounds):
     completion = Fraction(95, 100)
-    final_success = Fraction(90, 100)
-    single_target_detection = Fraction(99, 100)
     rows = []
-    for referral in (Fraction(1), Fraction(95, 100)):
-        required_all_targets = final_success / (referral * completion)
-        allowed_total_miss = 1 - required_all_targets
-        for target_count in (1, 3, 6, 9):
+    for policy, referral in referral_bounds.items():
+        for final_success in (Fraction(4, 5), Fraction(9, 10)):
+            combined = referral * completion
+            required_all_targets = final_success / combined
+            allowed_total_miss = 1 - required_all_targets if required_all_targets <= 1 else None
             rows.append({
+                "policy": policy,
+                "search_capacity": capacity,
+                "reading_allowance": reading_allowance,
                 "target_units": target_count,
                 "referral_and_capacity_bound": float(referral),
                 "completion_bound": float(completion),
                 "final_success_requirement": float(final_success),
+                "maximum_guarantee_at_specified_bounds": float(combined),
                 "required_all_target_detection": float(required_all_targets),
-                "maximum_sum_of_target_miss_bounds": float(allowed_total_miss),
-                "required_common_target_detection": float(1 - allowed_total_miss / target_count),
-                "example_marginal_target_detection": float(single_target_detection),
-                "example_all_target_detection_lower": float(max(0, 1 - target_count * (1 - single_target_detection))),
-                "example_all_target_detection_upper": float(single_target_detection),
+                "maximum_sum_of_target_miss_bounds": (
+                    float(allowed_total_miss) if allowed_total_miss is not None else None),
+                "required_common_target_detection": (
+                    float(1 - allowed_total_miss / target_count) if allowed_total_miss is not None else None),
             })
     return rows
 
 
-def validation_sample_sizes():
-    rows = []
-    cases = [("completion", 0.95, 1.00, 0.025, 1), ("detection_for_80_percent", 0.80 / 0.95, 1.00, 0.025, 1),
-             ("detection_for_90_percent", 0.90 / 0.95, 1.00, 0.025, 1), ("joint_for_80_percent", 0.80, 1.00, 0.05, 1)]
-    cases += [("joint_for_90_percent", 0.90 / referral, referral, 0.05, 1)
-              for referral in (1.00, 0.975, 0.95, 0.925)]
-    cases.append(("joint_for_90_percent", 0.90 / 0.95, 0.95, 0.025, 2))
-    for measure, requirement, referral, alpha, strata in cases:
-        for failures in (0, 1):
-            trials = minimum_validation_batches(requirement, alpha, failures)
-            rows.append({"measure": measure, "referral_and_capacity_bound": referral,
-                         "required_probability": requirement, "tail_probability": alpha,
-                         "allowed_failures": failures, "minimum_batches": trials, "capability_strata": strata})
-    return rows
-
-
 def smoke():
+    assert required_detection_for_mean_risk(0.002, 0.001) is None
+    assert required_detection_for_mean_risk(0.001, 0.001) == 1.0
+    assert required_detection_for_mean_risk(0.0, 0.001) == 0.999
+    assert math.isclose(required_detection_for_mean_risk(0.10, 0.19), 0.90)
     n_read, slots = 3, 2
     samples = list(combinations(range(5), n_read))
     for stopping in (False, True):
@@ -695,6 +714,10 @@ def smoke():
     assert counting_outcomes(4, 3, 4, 2, True, n_target_records=1) == (
         Fraction(2, 3), Fraction(2, 3), Fraction(1, 3), Fraction(1, 3))
     assert np.isclose(quota_program((1, 5), 3, [((1, 5), 0), ((1, 5), 1)])[0], 0.5)
+    locations = list(combinations(range(1, 7), 4))
+    expected_third_referral = Fraction(sum(positions[2] for positions in locations), len(locations))
+    assert expected_pooled_readings(6, 4, 3) == expected_third_referral == Fraction(21, 5)
+    assert expected_pooled_readings(6, 2, 3) == 6
     feedback = feedback_analysis("smoke")[0]
     assert feedback["binary_referrals"] == feedback["immediate_search_findings"]
     durations = [2, 3, 5]
@@ -729,27 +752,34 @@ def smoke():
         assert abs(float(max_lower) - max(observed)) < 1e-12
         assert float(outer_min) <= min(observed) + 1e-12 <= float(outer_max) + 1e-12
     assert clock_seconds(50408) == 5 * 3600 + 4 * 60 + 8
-    assert validation_sample_sizes()[0]["minimum_batches"] == math.ceil(math.log(0.025) / math.log(0.95))
-    for row in conditional_detection_requirements():
+    detection_rows = conditional_detection_requirements(25, 11, 9, {
+        "stopping": Fraction(1), "full_fixed": Fraction(9, 10),
+    })
+    assert math.isclose(detection_rows[0]["required_all_target_detection"], 16 / 19)
+    assert math.isclose(detection_rows[1]["required_all_target_detection"], 18 / 19)
+    assert math.isclose(detection_rows[2]["required_all_target_detection"], 160 / 171)
+    for row in detection_rows:
         target_count = row["target_units"]
         threshold = row["required_common_target_detection"]
+        if threshold is None:
+            assert row["policy"] == "full_fixed" and row["final_success_requirement"] == 0.90
+            assert row["maximum_guarantee_at_specified_bounds"] == 0.855
+            assert row["required_all_target_detection"] > 1
+            continue
         misses = np.array(list(product((0, 1), repeat=target_count)))
         all_found = (misses.sum(axis=1) == 0).astype(float)
         total_probability = np.ones((1, len(misses)))
         least = linprog(all_found, A_ub=misses.T, b_ub=np.repeat(1 - threshold, target_count),
                         A_eq=total_probability, b_eq=[1], bounds=(0, None), method="highs")
         assert least.success and np.isclose(least.fun, row["required_all_target_detection"], atol=1e-12, rtol=0)
-        for direction, key in ((1, "lower"), (-1, "upper")):
-            optimum = linprog(direction * all_found, A_eq=np.vstack((total_probability, misses.T)),
-                              b_eq=[1, *np.repeat(0.01, target_count)], bounds=(0, None), method="highs")
-            assert optimum.success and np.isclose(direction * optimum.fun,
-                                                  row[f"example_all_target_detection_{key}"], atol=1e-12, rtol=0)
-    for row in validation_sample_sizes():
-        required, alpha = row["required_probability"], row["tail_probability"]
-        trials, failures = row["minimum_batches"], row["allowed_failures"]
-        assert beta.ppf(alpha, trials - failures, failures + 1) >= required
-        assert beta.ppf(alpha, trials - failures - 1, failures + 1) < required
-        assert binom.cdf(failures, trials, 1 - required) <= alpha < binom.cdf(failures, trials - 1, 1 - required)
+        assert np.isclose(least.fun * row["maximum_guarantee_at_specified_bounds"],
+                          row["final_success_requirement"], atol=1e-12, rtol=0)
+    quota_rows = conditional_detection_requirements(24, 11, 9, {
+        "group_quota": Fraction(158, 165), "pooled_allocation": Fraction(8, 9),
+    })
+    assert math.isclose(quota_rows[0]["required_all_target_detection"], 1320 / 1501)
+    assert math.isclose(quota_rows[2]["required_all_target_detection"], 18 / 19)
+    assert quota_rows[3]["required_common_target_detection"] is None
     return {"passed": True, "script_sha256": sha256(BASE / "src" / "r1_followup_analysis.py")}
 
 
@@ -772,11 +802,34 @@ def main():
         difficulty = image_difficulty(trial)
         repeated_targets, recorded_effect = repeated_target_analysis(trial)
         summary, replays, histogram = service_analysis()
+        policy_capacity = pd.read_csv(IMAGE_OUT / "policy_capacity.csv", dtype={
+            "stop_lower": str, "fixed_full_lower": str,
+        })
+        matched = policy_capacity.loc[policy_capacity["condition"].eq("false_miss")
+                                     & policy_capacity["total_search_capacity"].eq(25)]
+        if len(matched) != 1:
+            raise ValueError("Expected one false-miss comparison at 25 searches")
+        comparison = matched.iloc[0]
+        detection_rows = conditional_detection_requirements(
+            int(comparison["total_search_capacity"]), int(comparison["common_reading_limit"]),
+            int(comparison["target_images"]), {
+                "stopping": Fraction(comparison["stop_lower"]),
+                "full_fixed": Fraction(comparison["fixed_full_lower"]),
+            },
+        )
+        quota_results = quota_analysis(cases["false_miss"], difficulty)
+        for row in quota_results:
+            detection_rows.extend(conditional_detection_requirements(
+                row["search_capacity"], row["first_pass_readings"], int(comparison["target_images"]), {
+                    "group_quota": Fraction(str(row["quota_replay_lower"])),
+                    "pooled_allocation": Fraction(str(row["pooled_replay_lower"])),
+                },
+            ))
         tables = {"repeated_target": repeated_targets, "schedule_workloads": schedule_workloads(trial),
                   "external_panel_targets": external_panel_analysis(trial),
-                  "quota_sensitivity": quota_analysis(cases["false_miss"], difficulty), "service_completion": replays,
-                  "service_duration_counts": histogram, "validation_sample_sizes": validation_sample_sizes(),
-                  "conditional_detection_requirements": conditional_detection_requirements(),
+                  "quota_sensitivity": quota_results, "service_completion": replays,
+                  "service_duration_counts": histogram,
+                  "conditional_detection_requirements": detection_rows,
                   "search_feedback": feedback_analysis("full"), "difficulty_order": difficulty_order_analysis(cases, difficulty),
                   "copula_extremum_enclosures": copula_enclosure_analysis(cases, recorded_effect),
                   "participant_deletion": participant_deletion_analysis(cases)}

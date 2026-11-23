@@ -1,5 +1,5 @@
-mandatory,difficult_images,easy_images,search_capacity,available_searches,placement_guarantee,quota_replay_lower,pooled_replay_lower
-21,1,5,24,3,0.5,0.8333333333333333,0.75
-21,1,5,25,4,0.6666666666666666,1.0,1.0
-16,4,7,24,8,0.7272727272727272,0.9575757575757575,0.8888888888888888
-16,4,7,25,9,0.8181818181818181,1.0,1.0
+mandatory,difficult_images,easy_images,search_capacity,available_searches,optional_images_read_in_full_pass,placement_guarantee,quota_replay_lower,pooled_replay_lower,paired_referral_effect_lower,paired_referral_effect_upper,first_pass_readings,max_extra_readings_vs_pooled_stopping,quota_replay_upper_mean_unreferred_fraction,pooled_replay_upper_mean_unreferred_fraction,quota_required_detection_for_mean_miss_limit_0_001,pooled_required_detection_for_mean_miss_limit_0_001
+21,1,5,24,3,6,0.5,0.8333333333333333,0.75,-0.16666666666666674,0.08333333333333326,6,1.8,0.018518518518518528,0.027777777777777776,,
+21,1,5,25,4,6,0.6666666666666666,1.0,1.0,0.0,0.0,6,0.4,0.0,0.0,0.999,0.999
+16,4,7,24,8,11,0.7272727272727272,0.9575757575757575,0.8888888888888888,-0.042424242424242475,0.06868686868686869,11,1.4,0.00471380471380472,0.012345679012345685,,
+16,4,7,25,9,11,0.8181818181818181,1.0,1.0,0.0,0.0,11,0.2,0.0,0.0,0.999,0.999

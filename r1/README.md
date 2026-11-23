@@ -43,12 +43,14 @@ These commands check the calculations on small cases:
 ```text
 python src/r1_image_unit_analysis.py --smoke
 python src/r1_followup_analysis.py --smoke
+python src/r1_external_sensitivity_analysis.py --smoke
 python src/r1_revision_validation.py --smoke
 python src/verify_r1_capacity.py --smoke
 python src/r1_compare_benchmarks.py --smoke
 python src/compare_sequential_policies_20261018.py --smoke
 python src/plot_r1_image_unit.py --smoke
 python src/plot_r1_fixed_structure_examples.py --smoke
+python src/plot_r1_restored_figures.py --smoke
 ```
 
 ## Full calculations
@@ -59,18 +61,22 @@ the expanded sensitivity analysis:
 ```text
 python src/r1_image_unit_analysis.py --full --bootstrap 2000 --copula-grid 40001 --copula-refinements 40
 python src/r1_followup_analysis.py --full
+python src/r1_external_sensitivity_analysis.py --full
 python src/r1_revision_validation.py --full --bootstrap 2000
 python src/verify_r1_capacity.py --full
 python src/r1_compare_benchmarks.py --full
 python src/compare_sequential_policies_20261018.py --full
 python src/plot_r1_image_unit.py --full
 python src/plot_r1_fixed_structure_examples.py --full
+python src/plot_r1_restored_figures.py --full
 ```
 
 The analysis writes tables and checks under `results/R1_image_unit/`. The plotting
 programs use saved result tables to recreate the figures independently of the
 analysis. They write editable SVG, vector PDF, and LaTeX figure files. The source
 tables for the fixed-count examples are under `results/R1_fixed_structure/`.
+The restored-figure script regenerates Figure 3 and Supplementary Figures S2–S4
+from the saved dependence, capacity, omission, detection, and timing results.
 
 ## Results by section
 
@@ -78,13 +84,36 @@ tables for the fixed-count examples are under `results/R1_fixed_structure/`.
 give the matched policy comparisons and capacity thresholds in Sections 5.3–5.6.
 `results/R1_followup/external_panel_targets.csv` gives the target-image judgment
 counts and the comparison at a common target count in Section 6.3 and
-Supplementary Section S5.3. `service_completion.csv`,
-`conditional_detection_requirements.csv`, and `validation_sample_sizes.csv` in
-the same directory give the workload, detection thresholds, and trial sample
-sizes in Section 5.7 and Supplementary Section S5.6.
+Supplementary Section S5.3. `conditional_detection_requirements.csv` reports the
+calculated all-target detection requirements for stopping, full fixed review,
+group quotas, and pooled allocation at matched resource limits.
+`service_completion.csv` and Supplementary Section S5.6 report the recorded
+service-stage durations and completion estimates.
+`results/R1_followup/external_sensitivity.csv` gives the participant-profile and
+lane-session bootstrap ranges and the quota sensitivity to target composition.
+`consecutive_service_session_bootstrap.csv` gives a separate lane-session
+cluster bootstrap for overlapping consecutive three- and five-check windows;
+it retains each observed session's sequence when resampling.
+`results/R1_followup/quota_capacity_frontier.csv` gives exact recovery limits
+at two through five search places for composition `(1,1)` and all three
+two-target compositions. `quota_composition_robustness.csv` quantifies quota
+coverage across a defined range of composition frequencies under a 60%
+mean-unreferred-target limit. The comparison covers the complete two-target
+composition set.
+`results/R1_followup/external_image_deletion.csv` gives the response sensitivity
+after deleting each target-image identity in turn. `target_category_sensitivity.csv`
+and `target_category_capacity_frontier.csv` compare gun-or-knife targets with all
+five labeled object classes in the two selected image schedules. They report the
+difficulty-group counts and the capacities needed under the article criteria.
+`external_matched_target_sensitivity.csv` and
+`external_matched_target_deletion.csv` report participant sensitivity on target
+images shared with the policy schedules. `external_image_generalisation.csv`
+compares shared and other target-image estimates within the same participants.
+`external_sensitivity.csv` gives the session-bootstrap interval for five checks
+completed within seven minutes.
 
 This archive accompanies the article and is available at
-https://github.com/Heinrichx26/finite-batch-secondary-inspection/releases/tag/v1.1.0.
+https://github.com/Heinrichx26/finite-batch-secondary-inspection/releases/tag/v1.2.1.
 
 ## Contents
 
@@ -94,7 +123,7 @@ https://github.com/Heinrichx26/finite-batch-secondary-inspection/releases/tag/v1
   and independent calculations.
 - `results/R1_followup/`: matched comparisons for repeated targets, copula extremum
   enclosures, participant and order sensitivity, quota and feedback calculations,
-  service completion, conditional detection requirements, and validation sample sizes.
+  service completion, and quota-composition sensitivity.
 - `results/R1_fixed_structure/`: the saved calculations used to render the supplementary
   fixed-count figure.
 - `results/R1_benchmarks/` and `results/sequential_comparison_20261018/`: the panel,

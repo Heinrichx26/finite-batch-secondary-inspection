@@ -1,0 +1,5 @@
+target_definition,categories,distinct_target_images,target_images_by_difficulty,minimum_capacity_stopping_80_percent_and_0_1_percent,minimum_capacity_fixed_80_percent_and_0_1_percent,condition,unique_images,target_images,maximum_reading_allowance,risk_constrained_best_fixed_readings
+gun_or_knife,gun;knife,9,"{""difficult"": 4, ""easy"": 5}",25,24,false_miss,27,9,11,11
+all_labeled_object_classes,gun;knife;pliers;scissors;wrench,19,"{""difficult"": 8, ""easy"": 11}",26,24,false_miss,27,19,11,11
+gun_or_knife,gun;knife,6,"{""difficult"": 4, ""easy"": 2}",24,24,false_alarm,27,6,7,0
+all_labeled_object_classes,gun;knife;pliers;scissors;wrench,16,"{""difficult"": 8, ""easy"": 8}",24,24,false_alarm,27,16,7,0

@@ -3,7 +3,13 @@
 The [reproducibility files for the revised article](r1/README.md) include
 the image-level comparisons, checkpoint service calculations, and conditional
 physical-detection requirements. The same files and checksums are available as
-`Reproducibility_Materials.zip` in [Release v1.1.0](https://github.com/Heinrichx26/finite-batch-secondary-inspection/releases/tag/v1.1.0).
+`Reproducibility_Materials.zip` in [Release v1.2.1](https://github.com/Heinrichx26/finite-batch-secondary-inspection/releases/tag/v1.2.1).
+
+From `r1/`, run `python src/plot_r1_restored_figures.py --smoke` to verify the
+saved inputs and `python src/plot_r1_restored_figures.py --full` to regenerate
+Figure 3 and Supplementary Figures S2–S4.
+
+The sections below describe the initial-submission analysis archived at `v1.0.0`.
 
 Analysis code for **Finite-batch reliability of secondary inspection under limited
 search capacity: Sequential policies and resource requirements**.

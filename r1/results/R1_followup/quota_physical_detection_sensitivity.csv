@@ -1,0 +1,15 @@
+scenario,optional_images,search_capacity,target_units,mean_unreferred_limit,allocation,referral_probability_lower,per_target_detection_sensitivity,all_target_detection_lower,referral_and_detection_lower,mean_unreferred_fraction_upper,meets_mean_unreferred_limit
+Recorded false-miss profile with one optional target,6,24,9,0.001,Group quotas,0.8333333333,0.99,0.91,0.7583333333,0.01851851852,False
+Recorded false-miss profile with one optional target,6,24,9,0.001,Pooled sampling,0.75,0.99,0.91,0.6825,0.02777777778,False
+Recorded false-miss profile with one optional target,6,25,9,0.001,Group quotas,1,0.99,0.91,0.91,0,True
+Recorded false-miss profile with one optional target,6,25,9,0.001,Pooled sampling,1,0.99,0.91,0.91,0,True
+Recorded false-miss profile with one optional target,11,24,9,0.001,Group quotas,0.9575757576,0.99,0.91,0.8713939394,0.004713804714,False
+Recorded false-miss profile with one optional target,11,24,9,0.001,Pooled sampling,0.8888888889,0.99,0.91,0.8088888889,0.01234567901,False
+Recorded false-miss profile with one optional target,11,25,9,0.001,Group quotas,1,0.99,0.91,0.91,0,True
+Recorded false-miss profile with one optional target,11,25,9,0.001,Pooled sampling,1,0.99,0.91,0.91,0,True
+Bounded composition; 60% mean-unreferred limit,,2,2,0.6,Group quotas,0.1335480634,0.99,0.98,0.1308771021,0.599892635,True
+Bounded composition; 60% mean-unreferred limit,,2,2,0.6,Pooled sampling,0.1,0.99,0.98,0.098,0.6,True
+Unrestricted composition; 60% mean-unreferred limit,,2,2,0.6,Group quotas,0.1,0.99,0.98,0.098,0.6,True
+Unrestricted composition; 60% mean-unreferred limit,,2,2,0.6,Pooled sampling,0.1,0.99,0.98,0.098,0.6,True
+Unrestricted composition; 0.1% mean-unreferred limit,,5,2,0.001,Group quotas,1,0.99,0.98,0.98,0,True
+Unrestricted composition; 0.1% mean-unreferred limit,,5,2,0.001,Pooled sampling,1,0.99,0.98,0.98,0,True
